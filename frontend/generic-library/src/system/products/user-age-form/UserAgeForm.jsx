@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import AddUser from './components/Users/AddUser';
 import UsersList from './components/Users/UsersList';
+
 import './UserAgeForm.scss';
 function UserAgeForm() {
     const [usersList, setUsersList] = useState([]);
@@ -13,11 +14,14 @@ function UserAgeForm() {
     };
 
     return (
-        <div className='userAgeForm'>
-            <AddUser onAddUser={addUserHandler} />
-            <UsersList users={usersList} />
-        </div>
+        <>
+            <div className="userAgeForm">
+                <AddUser onAddUser={addUserHandler} />
+                <UsersList users={usersList} />
+            </div>
+            <div id="backdrop-root"></div>
+            <div id="overlay-root"></div>
+        </>
     );
 }
-
 export default UserAgeForm;

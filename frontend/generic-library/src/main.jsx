@@ -6,6 +6,7 @@ import App from './App';
 import ConceptCards from './system/products/concept-cards/ConceptCards';
 import ExpenseTracker from './system/products/expense-tracker/ExpenseTracker';
 import InvestmentCalculator from './system/products/investment-calculator/InvestmentCalculator';
+import UserAgeForm from './system/products/user-age-form/UserAgeForm';
 import './index.scss';
 const products = [
     {
@@ -22,6 +23,11 @@ const products = [
         name: 'Investment Calculator',
         path: '/products/investment-calculator',
         component: InvestmentCalculator,
+    },
+    {
+        name: 'User Age Form',
+        path: '/products/user-age-form',
+        component: UserAgeForm,
     }
 ];
 

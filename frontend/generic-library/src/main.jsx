@@ -7,6 +7,7 @@ import ConceptCards from './system/products/concept-cards/ConceptCards';
 import ExpenseTracker from './system/products/expense-tracker/ExpenseTracker';
 import InvestmentCalculator from './system/products/investment-calculator/InvestmentCalculator';
 import UserAgeForm from './system/products/user-age-form/UserAgeForm';
+import LoginForm from './system/products/login-form/LoginForm';
 import './index.scss';
 const products = [
     {
@@ -28,7 +29,12 @@ const products = [
         name: 'User Age Form',
         path: '/products/user-age-form',
         component: UserAgeForm,
-    }
+    },
+    {
+        name: 'Login Form',
+        path: '/products/login-form',
+        component: LoginForm,
+    },
 ];
 
 const router = createBrowserRouter([

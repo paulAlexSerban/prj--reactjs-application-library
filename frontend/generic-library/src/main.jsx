@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import ConceptCards from './system/products/concept-cards/ConceptCards';
+import ExpenseTracker from './system/products/expense-tracker/ExpenseTracker';
+import './index.scss';
 
 const products = [
     {
@@ -11,6 +13,11 @@ const products = [
         path: '/products/concept-cards',
         component: ConceptCards,
     },
+    {
+        name: 'Expense Tracker',
+        path: '/products/expense-tracker',
+        component: ExpenseTracker,
+    }
 ];
 
 const router = createBrowserRouter([

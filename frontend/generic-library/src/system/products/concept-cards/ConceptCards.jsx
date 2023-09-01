@@ -1,8 +1,9 @@
+import "./ConceptCards.scss";
 import componentsImage from '../../../assets/images/components.png';
 import stateImage from '../../../assets/images/state.png';
 import eventsImage from '../../../assets/images/events.png';
-import Header from '../../../library/components/Header/Header';
-import ConceptCard from '../../../library/components/Concept/Concept';
+import Header from './components/Header/Header';
+import ConceptCard from './components/Concept/Concept';
 
 const concepts = [
     {
@@ -27,7 +28,7 @@ const concepts = [
 
 function ConceptCards() {
     return (
-        <div>
+        <div className='conceptCards'>
             <Header />
             <ul id="concepts">
                 {concepts.map((concept) => (

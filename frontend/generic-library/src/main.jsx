@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import ConceptCards from './system/products/concept-cards/ConceptCards';
 import ExpenseTracker from './system/products/expense-tracker/ExpenseTracker';
+import InvestmentCalculator from './system/products/investment-calculator/InvestmentCalculator';
 import './index.scss';
-
 const products = [
     {
         name: 'Concept Cards',
@@ -17,6 +17,11 @@ const products = [
         name: 'Expense Tracker',
         path: '/products/expense-tracker',
         component: ExpenseTracker,
+    },
+    {
+        name: 'Investment Calculator',
+        path: '/products/investment-calculator',
+        component: InvestmentCalculator,
     }
 ];
 

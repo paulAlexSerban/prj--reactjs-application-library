@@ -47,6 +47,12 @@ const Login = (props) => {
     const [formIsValid, setFormIsValid] = useState(false);
 
     // UseReducer for email input state, using emailReducer
+    // const [state, dispatchFunction] = useReducer(reducerFunction, initialState, initFunction);
+    // state: the state snapshot used in the component re-render / re-evaluation cycle
+    // dispatchFunction: the function used to dispatch new actions to the reducer function (i.e. trigger an update of the state)
+    // reducerFunction: (prevState, action) => newState - a function that is triggered automatically once an action is dispatched (via dispatchFunction()) - it receives the latest state snapshot and should return the new, updated state
+    // initialState: the initial state snapshot
+    // initFunction: an optional function that can be used to initialize the state snapshot programmatically (i.e. if it's a complex object, or if it depends on props)
     const [emailState, dispatchEmail] = useReducer(emailReducer, {
         value: '',
         isValid: null,

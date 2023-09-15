@@ -39,11 +39,11 @@ jobs:
 
       - name: "📦  Install Component Library Build dependencies"
         run: |
-          bash modulize.bash -e production -m generic-library -p install
+          bash modulize -e production -m generic-library -p install
 
       - name: "🏗️  Build Frontend Component Library"
         run: |
-          bash modulize.bash -e production -m generic-library -p build
+          bash modulize -e production -m generic-library -p build
 
       - name: "🚚  Package Component Library"
         run: |

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import ConceptCards from './system/products/concept-cards/ConceptCards';
@@ -37,7 +37,7 @@ const products = [
     },
 ];
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: '/prj--reactjs-component-lib',
         element: <App products={products} />,

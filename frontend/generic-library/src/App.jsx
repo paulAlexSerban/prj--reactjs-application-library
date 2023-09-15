@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 function App({ components, modules, patterns, products, templates }) {
     return (
         <div>
@@ -7,7 +8,7 @@ function App({ components, modules, patterns, products, templates }) {
                     <ul>
                         {components.map((component) => (
                             <li key={component.path}>
-                                <a href={component.path}>{component.name}</a>
+                                <Link to={component.path}>{component.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -20,7 +21,7 @@ function App({ components, modules, patterns, products, templates }) {
                     <ul>
                         {modules.map((module) => (
                             <li key={module.path}>
-                                <a href={module.path}>{module.name}</a>
+                                <Link to={module.path}>{module.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -33,7 +34,7 @@ function App({ components, modules, patterns, products, templates }) {
                     <ul>
                         {patterns.map((pattern) => (
                             <li key={pattern.path}>
-                                <a href={pattern.path}>{pattern.name}</a>
+                                <Link to={pattern.path}>{pattern.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -46,7 +47,7 @@ function App({ components, modules, patterns, products, templates }) {
                     <ul>
                         {templates.map((template) => (
                             <li key={template.path}>
-                                <a href={template.path}>{template.name}</a>
+                                <Link to={template.path}>{template.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -59,7 +60,7 @@ function App({ components, modules, patterns, products, templates }) {
                     <ul>
                         {products.map((product) => (
                             <li key={product.path}>
-                                <a href={product.path}>{product.name}</a>
+                                <Link to={product.path}>{product.name}</Link>
                             </li>
                         ))}
                     </ul>

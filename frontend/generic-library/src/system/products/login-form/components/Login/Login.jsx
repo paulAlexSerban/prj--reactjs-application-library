@@ -64,6 +64,10 @@ const Login = (props) => {
         isValid: null,
     });
 
+    // Destructure email and password validity from their respective states
+    const { isValid: emailIsValid } = emailState;
+    const { isValid: passwordIsValid } = passwordState;
+
     // Access the authentication context
     const authCtx = useContext(AuthContext);
 
@@ -84,10 +88,6 @@ const Login = (props) => {
             clearTimeout(identifier);
         };
     }, [emailIsValid, passwordIsValid]);
-
-    // Destructure email and password validity from their respective states
-    const { isValid: emailIsValid } = emailState;
-    const { isValid: passwordIsValid } = passwordState;
 
     // Handler for email input change
     const emailChangeHandler = (event) => {

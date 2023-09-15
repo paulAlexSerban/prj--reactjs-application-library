@@ -47,8 +47,8 @@ jobs:
 
       - name: "🚚  Package Component Library"
         run: |
-          mkdir -p package/dist/generic-library
-          cp -r frontend/generic-library/dist/* package/dist/generic-library
+          mkdir -p package/dist
+          cp -r frontend/generic-library/dist/* package/dist
           touch package/dist/.nojekyll
           touch package/dist/CNAME
           echo ${{ env.BASE_URL }} > package/dist/CNAME

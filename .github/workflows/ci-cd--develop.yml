@@ -49,9 +49,6 @@ jobs:
         run: |
           mkdir -p package/dist
           cp -r frontend/generic-library/dist/* package/dist
-          touch package/dist/.nojekyll
-          touch package/dist/CNAME
-          echo ${{ env.BASE_URL }} > package/dist/CNAME
 
       - uses: actions/upload-artifact@v3
         with:

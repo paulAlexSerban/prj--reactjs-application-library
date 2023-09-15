@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import ConceptCards from './system/products/concept-cards/ConceptCards';
@@ -17,7 +17,7 @@ const products = [
     },
     {
         name: 'Expense Tracker',
-        path: 'prj--reactjs-component-lib/products/expense-tracker',
+        path: '/prj--reactjs-component-lib/products/expense-tracker',
         component: ExpenseTracker,
     },
     {
@@ -37,7 +37,7 @@ const products = [
     },
 ];
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/prj--reactjs-component-lib',
         element: <App products={products} />,

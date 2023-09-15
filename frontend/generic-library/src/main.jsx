@@ -12,41 +12,41 @@ import './index.scss';
 const products = [
     {
         name: 'Concept Cards',
-        path: '/prj--reactjs-component-lib/products/concept-cards',
+        path: '/products/concept-cards',
         component: ConceptCards,
     },
     {
         name: 'Expense Tracker',
-        path: '/prj--reactjs-component-lib/products/expense-tracker',
+        path: '/products/expense-tracker',
         component: ExpenseTracker,
     },
     {
         name: 'Investment Calculator',
-        path: '/prj--reactjs-component-lib/products/investment-calculator',
+        path: '/products/investment-calculator',
         component: InvestmentCalculator,
     },
     {
         name: 'User Age Form',
-        path: '/prj--reactjs-component-lib/products/user-age-form',
+        path: '/products/user-age-form',
         component: UserAgeForm,
     },
     {
         name: 'Login Form',
-        path: '/prj--reactjs-component-lib/products/login-form',
+        path: '/products/login-form',
         component: LoginForm,
     },
 ];
 
 const router = createBrowserRouter([
     {
-        path: '/prj--reactjs-component-lib',
+        path: '/',
         element: <App products={products} />,
     },
     ...products.map((product) => ({
         path: product.path,
         element: <product.component />,
     })),
-]);
+], { basename: import.meta.env.DEV ? '/' : '/prj--reactjs-component-lib/' })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

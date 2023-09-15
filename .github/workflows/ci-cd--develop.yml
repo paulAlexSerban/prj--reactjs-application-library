@@ -6,6 +6,18 @@ on:
     pull_request:
         types: [synchronize]
     workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+    group: 'pages'
+    cancel-in-progress: true
+
 env:
     NODE_VERSION: 18.17.1
     GENERIC_LIBRARY: frontend/generic-library
@@ -14,6 +26,9 @@ env:
 jobs:
   deploy-cmp-libraries:
     name: Deploy Component Libraries to Github Pages
+    environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: "📥 checkout repository"

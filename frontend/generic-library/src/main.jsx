@@ -12,34 +12,34 @@ import './index.scss';
 const products = [
     {
         name: 'Concept Cards',
-        path: '/products/concept-cards',
+        path: '/prj--reactjs-component-lib/products/concept-cards',
         component: ConceptCards,
     },
     {
         name: 'Expense Tracker',
-        path: '/products/expense-tracker',
+        path: 'prj--reactjs-component-lib/products/expense-tracker',
         component: ExpenseTracker,
     },
     {
         name: 'Investment Calculator',
-        path: '/products/investment-calculator',
+        path: '/prj--reactjs-component-lib/products/investment-calculator',
         component: InvestmentCalculator,
     },
     {
         name: 'User Age Form',
-        path: '/products/user-age-form',
+        path: '/prj--reactjs-component-lib/products/user-age-form',
         component: UserAgeForm,
     },
     {
         name: 'Login Form',
-        path: '/products/login-form',
+        path: '/prj--reactjs-component-lib/products/login-form',
         component: LoginForm,
     },
 ];
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/prj--reactjs-component-lib',
         element: <App products={products} />,
     },
     ...products.map((product) => ({

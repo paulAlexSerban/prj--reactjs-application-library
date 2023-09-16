@@ -1,10 +1,10 @@
-# React Component Library (JavaScript)
+# [React Component Library (JavaScript)](https://paulalexserban.github.io/prj--reactjs-component-lib/)
 
 ## To Do's
-- [ ] Use SCSS
+- [x] Use SCSS
 - [ ] Storybook
 - [ ] CI/CD pipeline
-- [ ] Github Pages
+- [x] Github Pages
 - [ ] unit tests
 - [ ] integration tests
 - [ ] e2e tests

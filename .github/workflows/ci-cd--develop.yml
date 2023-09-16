@@ -65,17 +65,6 @@ jobs:
           mkdir -p package/dist
           cp -r frontend/generic-library/dist/* package/dist
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: component-libraries
-          path: package/dist/
-
-      - name: "📦 Upload artifact"
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist-${{ github.sha }}
-          path: package/dist
-
       - name: "🔧 Setup Pages"
         uses: actions/configure-pages@v3
 

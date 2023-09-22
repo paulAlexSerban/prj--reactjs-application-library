@@ -26,10 +26,12 @@ env:
 jobs:
   deploy-cmp-libraries:
     name: Deploy Component Libraries to Github Pages
+    runs-on: ubuntu-latest
     environment:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
+
     steps:
       - name: "📥 checkout repository"
         uses: actions/checkout@v3

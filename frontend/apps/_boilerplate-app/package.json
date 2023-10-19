@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/text-app",
+    "name": "@prj--reactjs-component-lib/boilerplate-app",
     "private": true,
     "version": "0.1.0",
     "type": "module",
@@ -22,7 +22,7 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/generic-lib": "*",
-        "@prj--reactjs-component-lib/lsg": "*"
+        "@prj--reactjs-component-lib/boilerplate-lib": "*",
+        "@prj--reactjs-component-lib/boilerplate-lsg": "*"
     }
 }

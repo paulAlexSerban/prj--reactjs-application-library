@@ -2,7 +2,13 @@ const terser = require('@rollup/plugin-terser');
 const resolve = require('@rollup/plugin-node-resolve');
 const babel = require('@rollup/plugin-babel');
 const NODE_ENV = process.env.NODE_ENV || 'development';
-const input = ['./src/index.js', './src/atoms/Text/index.js'];
+const input = [
+    './src/index.js',
+    './src/atoms/Text/index.js',
+    './src/atoms/Color/index.js',
+    './src/atoms/Button/index.js',
+    './src/atoms/Margin/index.js',
+];
 const plugins = [
     resolve(),
     babel({

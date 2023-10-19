@@ -6,14 +6,14 @@ import classes from './Home.module.scss';
 import AuthContext from '../../store/auth-context';
 
 const Home = () => {
-  const authCtx = useContext(AuthContext);
+    const authCtx = useContext(AuthContext);
 
-  return (
-    <Card className={classes.home}>
-      <h1>Welcome back!</h1>
-      <Button onClick={authCtx.onLogout}>Logout</Button>
-    </Card>
-  );
+    return (
+        <Card className={classes.home}>
+            <h1>Welcome back!</h1>
+            <Button onClick={authCtx.onLogout}>Logout</Button>
+        </Card>
+    );
 };
 
 export default Home;

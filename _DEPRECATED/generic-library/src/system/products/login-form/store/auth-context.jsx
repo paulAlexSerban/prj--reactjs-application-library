@@ -6,7 +6,7 @@ const AuthContext = createContext({
     onLogin: (email, password) => {},
 });
 
-export const AuthContextProvider = ({children}) => {
+export const AuthContextProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     useEffect(() => {

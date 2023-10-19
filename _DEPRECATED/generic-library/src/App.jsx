@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 function App({ components, modules, patterns, products, templates }) {
     return (
         <div>

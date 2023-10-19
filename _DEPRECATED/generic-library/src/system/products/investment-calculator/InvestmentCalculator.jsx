@@ -4,42 +4,42 @@ import ResultsTable from './components/ResultsTable/ResultsTable';
 import UserInput from './components/UserInput/UserInput';
 import './InvestmentCalculator.scss';
 function InvestmentCalculator() {
-  const [userInput, setUserInput] = useState(null);
+    const [userInput, setUserInput] = useState(null);
 
-  const calculateHandler = (userInput) => {
-    setUserInput(userInput);
-  };
+    const calculateHandler = (userInput) => {
+        setUserInput(userInput);
+    };
 
-  const yearlyData = [];
+    const yearlyData = [];
 
-  if (userInput) {
-    let currentSavings = +userInput['current-savings'];
-    const yearlyContribution = +userInput['yearly-contribution'];
-    const expectedReturn = +userInput['expected-return'] / 100;
-    const duration = +userInput['duration'];
+    if (userInput) {
+        let currentSavings = +userInput['current-savings'];
+        const yearlyContribution = +userInput['yearly-contribution'];
+        const expectedReturn = +userInput['expected-return'] / 100;
+        const duration = +userInput['duration'];
 
-    for (let i = 0; i < duration; i++) {
-      const yearlyInterest = currentSavings * expectedReturn;
-      currentSavings += yearlyInterest + yearlyContribution;
-      yearlyData.push({
-        year: i + 1,
-        yearlyInterest: yearlyInterest,
-        savingsEndOfYear: currentSavings,
-        yearlyContribution: yearlyContribution,
-      });
+        for (let i = 0; i < duration; i++) {
+            const yearlyInterest = currentSavings * expectedReturn;
+            currentSavings += yearlyInterest + yearlyContribution;
+            yearlyData.push({
+                year: i + 1,
+                yearlyInterest: yearlyInterest,
+                savingsEndOfYear: currentSavings,
+                yearlyContribution: yearlyContribution,
+            });
+        }
     }
-  }
 
-  return (
-    <div className='investmentCalculator'>
-      <Header />
+    return (
+        <div className="investmentCalculator">
+            <Header />
 
-      <UserInput onCalculate={calculateHandler} />
+            <UserInput onCalculate={calculateHandler} />
 
-      {!userInput && <p style={{textAlign: 'center'}}>No investment calculated yet.</p>}
-      {userInput && <ResultsTable data={yearlyData} initialInvestment={userInput['current-savings']} />}
-    </div>
-  );
+            {!userInput && <p style={{ textAlign: 'center' }}>No investment calculated yet.</p>}
+            {userInput && <ResultsTable data={yearlyData} initialInvestment={userInput['current-savings']} />}
+        </div>
+    );
 }
 
 export default InvestmentCalculator;

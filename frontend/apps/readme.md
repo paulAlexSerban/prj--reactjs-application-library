@@ -1,2 +1,3 @@
 # Frontend / Apps
-- Individual client applications
+
+-   Individual client applications

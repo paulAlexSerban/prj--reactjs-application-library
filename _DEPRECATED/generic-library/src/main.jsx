@@ -37,16 +37,19 @@ const products = [
     },
 ];
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App products={products} />,
-    },
-    ...products.map((product) => ({
-        path: product.path,
-        element: <product.component />,
-    })),
-], { basename: import.meta.env.DEV ? '/' : '/prj--reactjs-component-lib/' })
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <App products={products} />,
+        },
+        ...products.map((product) => ({
+            path: product.path,
+            element: <product.component />,
+        })),
+    ],
+    { basename: import.meta.env.DEV ? '/' : '/prj--reactjs-component-lib/' }
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

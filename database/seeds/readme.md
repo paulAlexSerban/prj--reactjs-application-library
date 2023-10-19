@@ -1,2 +1,3 @@
 # Database / Seeds
-- Scripts for seeding initial data to the database
+
+-   Scripts for seeding initial data to the database

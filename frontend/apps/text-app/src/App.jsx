@@ -1,7 +1,10 @@
 import { Text } from '@prj--reactjs-component-lib/generic-lib';
 
-function App() {
-    return <Text size="large">Hello World!</Text>;
+import '@prj--reactjs-component-lib/lsg/lib/atoms/text.css';
+import '@prj--reactjs-component-lib/lsg/lib/global.css';
+
+const App = () => {
+    return <Text size="xl">Hello World!</Text>;
 }
 
 export default App;

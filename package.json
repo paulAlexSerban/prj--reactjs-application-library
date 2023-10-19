@@ -9,7 +9,8 @@
         "formats:write": "yarn prettier --write .",
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",
         "build:dev": "yarn formats:write && lerna run build:dev",
-        "build:prod": "yarn formats:write && lerna run build:prod"
+        "build:prod": "yarn formats:write && lerna run build:prod",
+        "lint": "yarn formats:write && lerna run lint"
     },
     "dependencies": {
         "lerna": "^7.3.0",

@@ -6,10 +6,28 @@
     "license": "MIT",
     "scripts": {
         "formats:check": "yarn prettier --check .",
-        "formats:write": "yarn prettier --write ."
+        "formats:write": "yarn prettier --write .",
+        "start": "yarn formats:write && yarn lerna run start --stream --parallel",
+        "build:dev": "yarn formats:write && lerna run build:dev",
+        "build:prod": "yarn formats:write && lerna run build:prod"
     },
     "dependencies": {
         "lerna": "^7.3.0",
         "prettier": "^3.0.3"
-    }
+    },
+    "workspaces": {
+        "packages": [
+            "assets/*",
+            "backend/*",
+            "database/*",
+            "frontend/*",
+            "frontend/**/*",
+            "shared/*",
+            "tools/*"
+        ],
+        "nohoist": [
+            "**/normalize-scss"
+        ]
+    },
+    "private": true
 }

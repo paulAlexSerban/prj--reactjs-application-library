@@ -1,11 +1,8 @@
 {
     "name": "@prj--reactjs-component-lib/generic-lib",
     "version": "0.1.0",
-    "main": "lib/index.js",
-    "files": [
-        "lib"
-    ],
     "license": "MIT",
+    "module": "lib/index.js",
     "scripts": {
         "start": "bash scripts/start.bash",
         "lint": "echo \"No linting configured\"",

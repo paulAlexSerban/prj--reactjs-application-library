@@ -1,0 +1,36 @@
+@use '../foundation/all' as var;
+
+:root {
+    --lsg-body-text-color: #{var.$dark};
+    --lsg-body-bg-color: #{var.$white};
+
+    --lsg-btn-primary-color: #{var.$white};
+    --lsg-btn-primary-bg: #{var.$green};
+    --lsg-btn-primary-bg-hover: #{var.$green-light};
+
+    --lsg-btn-secondary-color: #{var.$white};
+    --lsg-btn-secondary-bg: #{var.$dark};
+
+    --lsg-form-color: #{var.$dark};
+    --lsg-form-bg: #{var.$white};
+    --lsg-form-error-color: #{var.$red};
+    --lsg-form-error-border: #{var.$red};
+    --lsg-form-border-focus-color: #{var.$green};
+
+    --lsg-body-font-size: #{var.$fs-base};
+    --lsg-body-font-weight: #{var.$fw-normal};
+
+    --lsg-h1-font-size: #{var.$h-1};
+    --lsg-h2-font-size: #{var.$h-2};
+    --lsg-h3-font-size: #{var.$h-3};
+    --lsg-h4-font-size: #{var.$h-4};
+    --lsg-h5-font-size: #{var.$h-5};
+    --lsg-h6-font-size: #{var.$h-6};
+
+    --lsg-h1-font-weight: #{var.$fw-medium};
+    --lsg-h2-font-weight: #{var.$fw-medium};
+    --lsg-h3-font-weight: #{var.$fw-medium};
+    --lsg-h4-font-weight: #{var.$fw-normal};
+    --lsg-h5-font-weight: #{var.$fw-normal};
+    --lsg-h6-font-weight: #{var.$fw-light};
+}

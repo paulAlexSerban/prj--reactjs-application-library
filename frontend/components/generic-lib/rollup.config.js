@@ -8,6 +8,8 @@ const input = [
     './src/atoms/Color/index.js',
     './src/atoms/Button/index.js',
     './src/atoms/Margin/index.js',
+    './src/molecules/Card/index.js',
+    './src/organisms/Header/index.js',
 ];
 const plugins = [
     resolve(),
@@ -36,5 +38,5 @@ module.exports = {
         preserveModules: true,
     },
     plugins,
-    external: ['react'],
+    external: ['react', '@prj--reactjs-component-lib/media-assets'],
 };

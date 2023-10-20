@@ -8,10 +8,11 @@
         "formats:check": "yarn prettier --check .",
         "formats:write": "yarn prettier --write .",
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",
-        "build:dev": "yarn formats:write && lerna run build:dev",
-        "build:prod": "yarn formats:write && lerna run build:prod",
+        "build:dev": "yarn formats:write && lerna run build:dev --stream",
+        "build:prod": "yarn formats:write && lerna run build:prod --stream",
         "lint": "yarn formats:write && lerna run lint",
-        "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream"
+        "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream",
+        "process:assets": "lerna run process --scope=@prj--reactjs-component-lib/media-assets --stream"
     },
     "dependencies": {
         "lerna": "^7.3.0",
@@ -20,6 +21,7 @@
     "workspaces": {
         "packages": [
             "assets/*",
+            "assets/",
             "backend/*",
             "database/*",
             "frontend/*",

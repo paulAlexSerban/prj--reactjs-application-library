@@ -1,4 +1,4 @@
-import logo from '../../../../../assets/images/investment-calculator-logo.png';
+import logo from '@prj--reactjs-component-lib/media-assets/dist/images/investment-calculator-logo-original.webp';
 import classes from './Header.module.css';
 
 const Header = () => {

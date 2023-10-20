@@ -2,8 +2,11 @@ import { useState } from 'react';
 import Header from './components/Header/Header';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import UserInput from './components/UserInput/UserInput';
-import './InvestmentCalculator.scss';
-function InvestmentCalculator() {
+
+import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
+import '@prj--reactjs-component-lib/generic-lsg/lib/products/investmentCalculator.css';
+
+const App = () => {
     const [userInput, setUserInput] = useState(null);
 
     const calculateHandler = (userInput) => {
@@ -40,6 +43,6 @@ function InvestmentCalculator() {
             {userInput && <ResultsTable data={yearlyData} initialInvestment={userInput['current-savings']} />}
         </div>
     );
-}
+};
 
-export default InvestmentCalculator;
+export default App;

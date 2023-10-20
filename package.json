@@ -10,7 +10,8 @@
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",
         "build:dev": "yarn formats:write && lerna run build:dev",
         "build:prod": "yarn formats:write && lerna run build:prod",
-        "lint": "yarn formats:write && lerna run lint"
+        "lint": "yarn formats:write && lerna run lint",
+        "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream"
     },
     "dependencies": {
         "lerna": "^7.3.0",

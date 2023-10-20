@@ -4,7 +4,7 @@ import AddUser from './components/Users/AddUser';
 import UsersList from './components/Users/UsersList';
 
 import './UserAgeForm.scss';
-function UserAgeForm() {
+function App() {
     const [usersList, setUsersList] = useState([]);
 
     const addUserHandler = (uName, uAge) => {
@@ -24,4 +24,4 @@ function UserAgeForm() {
         </>
     );
 }
-export default UserAgeForm;
+export default App;

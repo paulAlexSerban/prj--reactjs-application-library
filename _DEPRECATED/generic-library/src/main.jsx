@@ -10,31 +10,31 @@ import UserAgeForm from './system/products/user-age-form/UserAgeForm';
 import LoginForm from './system/products/login-form/LoginForm';
 import './index.scss';
 const products = [
-    {
-        name: 'Concept Cards',
-        path: '/products/concept-cards',
-        component: ConceptCards,
-    },
-    {
-        name: 'Expense Tracker',
-        path: '/products/expense-tracker',
-        component: ExpenseTracker,
-    },
-    {
-        name: 'Investment Calculator',
-        path: '/products/investment-calculator',
-        component: InvestmentCalculator,
-    },
-    {
-        name: 'User Age Form',
-        path: '/products/user-age-form',
-        component: UserAgeForm,
-    },
-    {
-        name: 'Login Form',
-        path: '/products/login-form',
-        component: LoginForm,
-    },
+    // {
+    //     name: 'Concept Cards',
+    //     path: '/products/concept-cards',
+    //     component: ConceptCards,
+    // },
+    // {
+    //     name: 'Expense Tracker',
+    //     path: '/products/expense-tracker',
+    //     component: ExpenseTracker,
+    // },
+    // {
+    //     name: 'Investment Calculator',
+    //     path: '/products/investment-calculator',
+    //     component: InvestmentCalculator,
+    // },
+    // {
+    //     name: 'User Age Form',
+    //     path: '/products/user-age-form',
+    //     component: UserAgeForm,
+    // },
+    // {
+    //     name: 'Login Form',
+    //     path: '/products/login-form',
+    //     component: LoginForm,
+    // },
 ];
 
 const router = createBrowserRouter(

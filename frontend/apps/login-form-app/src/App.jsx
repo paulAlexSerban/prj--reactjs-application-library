@@ -7,6 +7,8 @@ import AuthContext from './store/auth-context';
 import { loginForm } from './LoginForm.module.scss';
 import { AuthContextProvider } from './store/auth-context';
 
+import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
+
 function LoginFormCmp() {
     const ctx = useContext(AuthContext);
 
@@ -29,7 +31,11 @@ const LoginFrom = () => {
     );
 };
 
-export default LoginFrom;
+const App = () => {
+    return <LoginFrom />;
+};
+
+export default App;
 
 /**
  * Login with any valid email and any password of 7 characters or more.

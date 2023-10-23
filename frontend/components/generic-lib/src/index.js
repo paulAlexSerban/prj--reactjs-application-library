@@ -6,5 +6,6 @@ import Margin from './atoms/Margin';
 import { ConceptCard } from './molecules/Card';
 
 import { ConceptHeader } from './organisms/Header';
+import { Counter } from './organisms/Counter';
 
-export { Text, Color, Button, Margin, ConceptCard, ConceptHeader };
+export { Text, Color, Button, Margin, ConceptCard, ConceptHeader, Counter };

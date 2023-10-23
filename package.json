@@ -8,6 +8,7 @@
         "formats:check": "yarn prettier --check .",
         "formats:write": "yarn prettier --write .",
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",
+        "start:storybook": "yarn formats:write && yarn lerna run start:storybook --stream --parallel",
         "build:dev": "yarn formats:write && lerna run build:dev --stream",
         "build:prod": "yarn formats:write && lerna run build:prod --stream",
         "lint": "yarn formats:write && lerna run lint",

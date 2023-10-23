@@ -5,11 +5,13 @@
     "module": "lib/index.js",
     "scripts": {
         "start": "bash scripts/start.bash",
+        "start:storybook": "bash scripts/start.bash",
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
         "build:prod": "bash scripts/build-prod.bash"
     },
     "devDependencies": {
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "rollup": "^4.0.2"

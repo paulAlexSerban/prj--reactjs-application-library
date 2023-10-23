@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import PropType from 'prop-types';
 import Button from '../../atoms/Button/Button.jsx';
 
@@ -13,14 +13,15 @@ const Counter = ({ color, borderRad = '4px' }) => {
     };
 
     return (
-        <div className="counter__base" style={{
-            backgroundColor: color,
-            borderRadius: borderRad,
-        
-        }}>
+        <div
+            className="counter__base"
+            style={{
+                backgroundColor: color,
+                borderRadius: borderRad,
+            }}
+        >
             <h2 className="counter__count">Counter: {count}</h2>
             <div className="counter__btn-container">
-
                 <Button label="-" onClick={() => handleOnClick('SUBTRACT')} />
                 <Button label="+" onClick={() => handleOnClick('ADD')} />
             </div>

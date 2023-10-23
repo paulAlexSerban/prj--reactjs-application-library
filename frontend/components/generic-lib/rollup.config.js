@@ -7,10 +7,12 @@ const input = [
     './src/atoms/Text/index.js',
     './src/atoms/Color/index.js',
     './src/atoms/Button/index.js',
+    './src/atoms/Star/index.js',
     './src/atoms/Margin/index.js',
     './src/molecules/Card/index.js',
+    './src/molecules/Counter/index.js',
+    './src/molecules/Rating/index.js',
     './src/organisms/Header/index.js',
-    './src/organisms/Counter/index.js',
 ];
 const plugins = [
     resolve(),
@@ -39,5 +41,5 @@ module.exports = {
         preserveModules: true,
     },
     plugins,
-    external: ['react', 'prop-types', '@prj--reactjs-component-lib/media-assets'],
+    external: ['react', 'prop-types', 'react-icons/fa', '@prj--reactjs-component-lib/media-assets'],
 };

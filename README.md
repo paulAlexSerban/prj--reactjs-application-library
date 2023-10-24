@@ -3,10 +3,15 @@
 ## To Do's
 
 -   [x] Use SCSS
--   [ ] Storybook
--   [ ] CI/CD pipeline
+-   [x] Storybook
+-   [x] CI/CD pipeline
 -   [x] Github Pages
--   [ ] unit tests
+-   [x] unit tests
+-   [ ] implement husky
+-   [ ] implement commitlint and commitizen
+-   [ ] implement semantic-release
+-   [ ] process and publish assets to AWS S3
+-   [ ] build and package apps in `./package/apps`
 -   [ ] integration tests
 -   [ ] e2e tests
 

@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/expense-tracker-app",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.0.0",
     "scripts": {
         "start": "vite",
         "build:dev": "vite build",

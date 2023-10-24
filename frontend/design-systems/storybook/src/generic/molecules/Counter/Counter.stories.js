@@ -3,6 +3,7 @@ import { Counter } from '@prj--reactjs-component-lib/generic-lib/lib/index';
 import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
 import '@prj--reactjs-component-lib/generic-lsg/lib/organisms/counter.css';
 
+
 const meta = {
     title: 'Generic/Molecules/Counter',
     component: Counter,

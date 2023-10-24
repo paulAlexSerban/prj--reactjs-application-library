@@ -10,6 +10,7 @@
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",
         "test": "yarn formats:write && yarn lerna run test --stream --parallel",
         "start:storybook": "yarn formats:write && yarn lerna run start:storybook --stream --parallel",
+        "test:chromatic": "yarn formats:write && yarn lerna run test:chromatic --stream --parallel",
         "build:dev": "yarn formats:write && lerna run build:dev --stream",
         "build:prod": "yarn formats:write && lerna run build:prod --stream",
         "lint": "yarn formats:write && lerna run lint",

@@ -6,6 +6,7 @@
     "scripts": {
         "start": "bash scripts/start.bash",
         "start:storybook": "bash scripts/start.bash",
+        "test:chromatic": "bash scripts/build-prod.bash",
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
         "build:prod": "bash scripts/build-prod.bash",

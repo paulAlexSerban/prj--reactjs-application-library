@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropType from 'prop-types';
-import '@prj--reactjs-component-lib/generic-lsg/lib/molecules/counter.css';
 import Button from '../../atoms/Button/Button.jsx';
 
 const Counter = ({ color, borderRad = '4px' }) => {

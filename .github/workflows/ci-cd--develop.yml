@@ -95,8 +95,11 @@ jobs:
               run: yarn install
 
             - name: '🌈 Run VRT w. Chromatic'
+              env:
+                  CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
-
+              
+# @TODO: to run the build - assets need to processed and uploaded to a CDN
             # - name: '📦  Install Component Library Build dependencies'
             #   run: |
             #       bash modulize -e production -m generic-library -p install

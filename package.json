@@ -5,6 +5,7 @@
     "author": "Paul Serban",
     "license": "MIT",
     "scripts": {
+        "prepare": "husky install",
         "formats:check": "yarn prettier --check .",
         "formats:write": "yarn prettier --write .",
         "start": "yarn formats:write && yarn lerna run start --stream --parallel",

@@ -98,30 +98,29 @@ jobs:
               env:
                   CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
-              
 # @TODO: to run the build - assets need to processed and uploaded to a CDN
-            # - name: '📦  Install Component Library Build dependencies'
-            #   run: |
-            #       bash modulize -e production -m generic-library -p install
+# - name: '📦  Install Component Library Build dependencies'
+#   run: |
+#       bash modulize -e production -m generic-library -p install
 
-            # - name: '🏗️  Build Frontend Component Library'
-            #   run: |
-            #       bash modulize -e production -m generic-library -p build
+# - name: '🏗️  Build Frontend Component Library'
+#   run: |
+#       bash modulize -e production -m generic-library -p build
 
-            # - name: '🚚  Package Component Library'
-            #   run: |
-            #       mkdir -p package/dist
-            #       cp -r frontend/generic-library/dist/* package/dist
+# - name: '🚚  Package Component Library'
+#   run: |
+#       mkdir -p package/dist
+#       cp -r frontend/generic-library/dist/* package/dist
 
-            # - name: '🔧 Setup Pages'
-            #   uses: actions/configure-pages@v3
+# - name: '🔧 Setup Pages'
+#   uses: actions/configure-pages@v3
 
-            # - name: Upload artifact
-            #   uses: actions/upload-pages-artifact@v2
-            #   with:
-            #       # Upload entire repository
-            #       path: './package/dist'
+# - name: Upload artifact
+#   uses: actions/upload-pages-artifact@v2
+#   with:
+#       # Upload entire repository
+#       path: './package/dist'
 
-            # - name: '🚀 Deploy to GitHub Pages'
-            #   id: deployment
-            #   uses: actions/deploy-pages@v2
+# - name: '🚀 Deploy to GitHub Pages'
+#   id: deployment
+#   uses: actions/deploy-pages@v2

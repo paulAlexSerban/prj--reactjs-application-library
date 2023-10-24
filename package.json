@@ -15,9 +15,16 @@
         "build:prod": "yarn formats:write && lerna run build:prod --stream",
         "lint": "yarn formats:write && lerna run lint",
         "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream",
-        "process:assets": "lerna run process --scope=@prj--reactjs-component-lib/media-assets --stream"
+        "process:assets": "lerna run process --scope=@prj--reactjs-component-lib/media-assets --stream",
+        "version": "bash tools/build-scripts/version.bash",
+        "commit": "yarn git-cz"
     },
     "dependencies": {
+        "@commitlint/cli": "^17.7.2",
+        "@commitlint/config-conventional": "^17.7.0",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.3",
         "lerna": "^7.3.0",
         "prettier": "^3.0.3"
     },
@@ -35,6 +42,17 @@
         "nohoist": [
             "**/normalize-scss"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
     },
     "private": true
 }

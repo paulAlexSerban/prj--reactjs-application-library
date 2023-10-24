@@ -10,7 +10,7 @@
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
         "build:prod": "bash scripts/build-prod.bash",
-        "test": "jest --verbose --coverage",
+        "test": "bash scripts/test.bash",
         "test:watch": "jest --watch"
     },
     "devDependencies": {

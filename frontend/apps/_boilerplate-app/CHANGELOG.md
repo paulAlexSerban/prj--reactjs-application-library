@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/boilerplate-app@0.2.0...@prj--reactjs-component-lib/boilerplate-app@0.2.1) (2023-10-26)
+
+### Bug Fixes
+
+-   small ([8821ade](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/8821ade94d0d3859a2681126c29ae9891dc2ec18))
+
 # 0.2.0 (2023-10-26)
 
 ### Bug Fixes

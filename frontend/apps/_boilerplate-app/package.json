@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/boilerplate-app",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.2.0",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",
@@ -22,7 +22,7 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/boilerplate-lib": "*",
-        "@prj--reactjs-component-lib/boilerplate-lsg": "*"
+        "@prj--reactjs-component-lib/boilerplate-lib": "^0.2.0",
+        "@prj--reactjs-component-lib/boilerplate-lsg": "^0.2.0"
     }
 }

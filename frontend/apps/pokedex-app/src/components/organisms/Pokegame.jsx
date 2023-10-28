@@ -1,9 +1,9 @@
-import pokemon from '../../data/pokemon';
 import Pokedex from '../molecules/Pokedex';
 
-const Pokegame = () => {
+const Pokegame = ({ pokemonList }) => {
     const hand1 = [];
-    const hand2 = [...pokemon];
+    const hand2 = [...pokemonList];
+
     while (hand1.length < hand2.length) {
         const randIdx = Math.floor(Math.random() * hand2.length);
         const randPokemon = hand2.splice(randIdx, 1)[0];

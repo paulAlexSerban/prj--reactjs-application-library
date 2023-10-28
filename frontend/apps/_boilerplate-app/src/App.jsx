@@ -10,7 +10,7 @@ const App = () => {
     return (
         <Margin space="xl">
             <Color hexCode="#ff0000" width="lg" height="lg" />
-            <Text size="xl">Hello World!!!</Text>
+            <Text size="xl">Hello World!</Text>
             <Button label="Click me" />
         </Margin>
     );

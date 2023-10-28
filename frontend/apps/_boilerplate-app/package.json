@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/boilerplate-app",
     "private": true,
-    "version": "0.2.1",
+    "version": "0.3.0",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",

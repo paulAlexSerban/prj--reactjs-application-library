@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/boilerplate-app@0.2.1...@prj--reactjs-component-lib/boilerplate-app@0.3.0) (2023-10-28)
+
+### Features
+
+-   **dice roll app:** init ([1fdf111](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/1fdf111986ec07320e0c4b487d5eda31fe2bdf1f))
+
 ## [0.2.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/boilerplate-app@0.2.0...@prj--reactjs-component-lib/boilerplate-app@0.2.1) (2023-10-26)
 
 ### Bug Fixes

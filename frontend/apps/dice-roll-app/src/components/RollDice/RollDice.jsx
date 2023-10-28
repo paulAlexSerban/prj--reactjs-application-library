@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Die from '../Die/Die';
 import './rollDice.scss';
 
-const RollDice = ({sides}) => {
+const RollDice = ({ sides }) => {
     const [die1, setDie1] = useState('one');
     const [die2, setDie2] = useState('one');
     const [rolling, setRolling] = useState(false);
@@ -24,11 +24,11 @@ const RollDice = ({sides}) => {
     };
 
     return (
-      <div className='rollDice'>
-        <div className='rollDice__container'>
-          <Die face={die1} rolling={rolling} />
-          <Die face={die2} rolling={rolling} />
-        </div>
+        <div className="rollDice">
+            <div className="rollDice__container">
+                <Die face={die1} rolling={rolling} />
+                <Die face={die2} rolling={rolling} />
+            </div>
             <button onClick={roll} disabled={rolling}>
                 {rolling ? 'Rolling...' : 'Roll Dice!'}
             </button>

@@ -1,7 +1,9 @@
+import RollDice from './components/RollDice/RollDice';
+
 const App = () => {
     return (
         <>
-            <h1>Dice Roll App</h1>
+            <RollDice />
         </>
     );
 };

@@ -1,9 +1,10 @@
-import { set } from 'husky';
+import Lottery from './components/Lottery';
 
 const App = () => {
     return (
         <>
-            <h1>Lottery App</h1>
+            <Lottery />
+            <Lottery title="Mini Daily" maxNum={10} numBalls={4} />
         </>
     );
 };

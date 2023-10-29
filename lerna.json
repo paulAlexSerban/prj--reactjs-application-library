@@ -10,6 +10,7 @@
         "frontend/*",
         "frontend/**/*",
         "shared/*",
+        "shared/**/*",
         "tools/*"
     ],
     "npmClient": "yarn",

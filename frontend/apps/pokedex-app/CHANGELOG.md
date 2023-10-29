@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/pokedex-app@0.3.0...@prj--reactjs-component-lib/pokedex-app@0.4.0) (2023-10-29)
+
+### Features
+
+-   **shared js functions:** impemented and used ([79298eb](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/79298ebd26e6d1bae87e9dc63e0fee17c3f0796e))
+
 # [0.3.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/pokedex-app@0.2.0...@prj--reactjs-component-lib/pokedex-app@0.3.0) (2023-10-28)
 
 ### Features

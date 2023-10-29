@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { choice } from '../helpers/choice';
+import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
 import Coin from './Coin';
 import './coinContainer.scss';
 const CoinContainer = ({ coins }) => {

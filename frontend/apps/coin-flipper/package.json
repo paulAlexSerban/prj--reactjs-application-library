@@ -22,7 +22,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/boilerplate-lib": "^0.2.0",
-        "@prj--reactjs-component-lib/boilerplate-lsg": "^0.2.0"
+        "@prj--reactjs-component-lib/shared-utils-js": "*"
     }
 }

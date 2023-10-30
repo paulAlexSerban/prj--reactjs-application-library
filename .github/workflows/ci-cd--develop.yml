@@ -55,19 +55,39 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      backend/**/*
+                      database/**/*
+                      frontend/**/*
+
+            - name: List all changed files
+              run: |
+                  for file in ${{ steps.changed-test-files.outputs.all_changed_files }}; do
+                    echo "$file was changed"
+                  done
+
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               run: yarn install
 
             - name: 'Run Tests'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               run: yarn run test
 
             - name: 'Upload coverage artifact'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               uses: actions/upload-artifact@v3
               with:
                   name: coverage-${{ github.run_number }}-${{ github.run_id }}
@@ -83,16 +103,27 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: '🔍  Verify Changed Files [shared, frontend]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               run: yarn install
 
             - name: '🌈 Run VRT w. Chromatic'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               env:
                   CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
@@ -102,7 +133,19 @@ jobs:
         runs-on: ubuntu-latest
         needs: [vrt-chromatic]
         steps:
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+                      assets/**/*
+                      backend/**/*
+                      database/**/*
+
             - name: 'Build /apps'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               run: echo "Build /apps - TO BE IMPLEMENTED"
 
     deploy-storybook-preview-netlify:
@@ -110,7 +153,18 @@ jobs:
         runs-on: ubuntu-latest
         needs: [vrt-chromatic]
         steps:
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+                      assets/**/*
+                      backend/**/*
+                      database/**/*
             - name: 'Build /storybook'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
               run: echo "Build /storybook - TO BE IMPLEMENTED"
 # @TODO: to run the build - assets need to processed and uploaded to a CDN
 # - name: '📦  Install Component Library Build dependencies'

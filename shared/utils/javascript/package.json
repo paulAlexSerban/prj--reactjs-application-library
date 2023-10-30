@@ -1,0 +1,16 @@
+{
+    "name": "@prj--reactjs-component-lib/shared-utils-js",
+    "version": "0.2.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "echo 'start'",
+        "build:dev": "echo 'build-dev'",
+        "build:prod": "echo 'build-prod'",
+        "lint": "eslint . --ext js --report-unused-disable-directives --max-warnings 0"
+    },
+    "devDependencies": {
+        "eslint": "^8.45.0"
+    }
+}

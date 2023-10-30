@@ -12,7 +12,8 @@
         "build:prod": "bash scripts/build-prod.bash",
         "test": "jest --verbose --coverage",
         "test:watch": "jest --watch",
-        "package": "bash scripts/package.bash"
+        "package": "bash scripts/package.bash",
+        "build:storybook": "bash scripts/build-prod.bash"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^6.1.4",

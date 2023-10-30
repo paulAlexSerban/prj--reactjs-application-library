@@ -14,6 +14,7 @@
         "test:chromatic": "yarn formats:write && yarn lerna run test:chromatic --stream --parallel",
         "build:dev": "yarn formats:write && lerna run build:dev --stream",
         "build:prod": "yarn formats:write && lerna run build:prod --stream",
+        "build:storybook": "yarn formats:write && lerna run build:storybook --stream",
         "package": "rm -rfv ./package/* && lerna run package --stream --parallel",
         "lint": "yarn formats:write && lerna run lint",
         "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream",

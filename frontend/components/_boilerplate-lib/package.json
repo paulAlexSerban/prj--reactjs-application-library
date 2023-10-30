@@ -7,7 +7,8 @@
         "start": "bash scripts/start.bash",
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
-        "build:prod": "bash scripts/build-prod.bash"
+        "build:prod": "bash scripts/build-prod.bash",
+        "build:storybook": "bash scripts/build-prod.bash"
     },
     "devDependencies": {
         "react": "^18.2.0",

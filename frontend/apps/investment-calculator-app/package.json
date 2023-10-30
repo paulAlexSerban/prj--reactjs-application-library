@@ -9,7 +9,7 @@
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
         "serve": "serve dist",
-        "package": "npm run build:prod && bash scripts/package.bash"
+        "package": "bash scripts/package.bash"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.0.3",

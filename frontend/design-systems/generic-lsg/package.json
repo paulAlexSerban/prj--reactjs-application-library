@@ -9,7 +9,8 @@
         "start:storybook": "export NODE_ENV=development && nodemon --watch src --exec yarn run build:dev -e scss",
         "test:chromatic": "rm -rfv ./lib && export NODE_ENV=production && node build/scss.js",
         "build:dev": "export NODE_ENV=development && node build/scss.js",
-        "build:prod": "rm -rfv ./lib && export NODE_ENV=production && node build/scss.js"
+        "build:prod": "rm -rfv ./lib && export NODE_ENV=production && node build/scss.js",
+        "build:storybook": "rm -rfv ./lib && export NODE_ENV=production && node build/scss.js"
     },
     "devDependencies": {
         "nodemon": "^3.0.1",

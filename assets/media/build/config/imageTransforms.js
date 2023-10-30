@@ -242,6 +242,7 @@ const ratios21x9 = [
     },
 ];
 
-const transforms = [...ratio1x1, ...ratio4x3];
+// const transforms = [...ratio4x3];
+const transforms = [];
 
 export default transforms;

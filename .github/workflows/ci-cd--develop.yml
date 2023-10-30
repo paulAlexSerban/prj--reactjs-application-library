@@ -210,23 +210,28 @@ jobs:
                       database/**/*
 
             - name: 'Create package/dist'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: mkdir -p package/apps
 
             - uses: actions/download-artifact@v3
+              if: steps.changed-test-files.outputs.any_changed == 'true'
               with:
                   name: apps-${{ github.run_number }}-${{ github.run_id }}
                   path: package/apps
 
             - name: '🔧 Setup Pages'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/configure-pages@v3
 
             - name: Upload artifact
+              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-pages-artifact@v2
               with:
                   # Upload entire repository
                   path: './package/apps'
 
             - name: '🚀 Deploy to GitHub Pages'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
               id: deployment
               uses: actions/deploy-pages@v2
 

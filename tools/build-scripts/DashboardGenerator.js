@@ -4,6 +4,7 @@ const path = require('path');
 const source = path.join(__dirname, '../..', 'package', 'apps');
 const dest = path.join(__dirname, '../..', 'package', 'apps');
 const BASE_URL = '/prj--reactjs-component-lib/';
+
 const init = () => {
     // Read the contents of the directory
     fs.readdir(source, (err, files) => {
@@ -23,12 +24,12 @@ const init = () => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Directory Index</title>
+          <title>React App Library</title>
         </head>
       <body>
-      <h1>Directory Index</h1>
+      <h1>React App Library</h1>
       <div>Generated on ${new Date().toLocaleString()}</div>
-      <div>Directories:</div>
+      <div>Apps:</div>
       <ul>
       `;
 

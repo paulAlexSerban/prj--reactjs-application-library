@@ -5,13 +5,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
+const PROJECT_NAME = require('./package.json').name.split('/').pop();
+
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: '/',
+        publicPath: NODE_ENV === 'development' ? '/' : `/prj--reactjs-component-lib/${PROJECT_NAME}/`,
     },
     mode: NODE_ENV,
     module: {

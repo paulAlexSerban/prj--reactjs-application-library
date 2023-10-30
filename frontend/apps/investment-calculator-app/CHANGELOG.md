@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/investment-calculator-app@0.3.0...@prj--reactjs-component-lib/investment-calculator-app@0.4.0) (2023-10-30)
+
+### Features
+
+-   formats ([d81e33d](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/d81e33db14d484d87c5c29b249d9d2cbd3a13560))
+
 # [0.3.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/investment-calculator-app@0.2.1...@prj--reactjs-component-lib/investment-calculator-app@0.3.0) (2023-10-30)
 
 ### Features

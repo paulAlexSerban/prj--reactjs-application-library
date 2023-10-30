@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/media-assets",
     "private": true,
-    "version": "0.3.1",
+    "version": "0.4.0",
     "files": [
         "dist"
     ],

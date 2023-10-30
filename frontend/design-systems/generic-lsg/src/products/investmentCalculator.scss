@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+.investmentCalculator {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background-color: #242a28; */
+    background: radial-gradient(#303b37, #1a1f1d);
+    color: #e1eeeb;
+    width: 100%;
+    padding: 3rem;
+    flex: 1;
+}

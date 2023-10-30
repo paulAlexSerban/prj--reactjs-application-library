@@ -1,8 +1,8 @@
-name: CI/CD
+name: CI/CD - DEV
 on:
     push:
         branches:
-            - main
+            - develop
     pull_request:
         types: [synchronize]
     workflow_dispatch:
@@ -20,62 +20,121 @@ concurrency:
 
 env:
     NODE_VERSION: 18.17.1
-    GENERIC_LIBRARY: frontend/generic-library
     BASE_URL: ${{ secrets.BASE_URL }}
 
 jobs:
-  deploy-cmp-libraries:
-    name: Deploy Component Libraries to Github Pages
-    runs-on: ubuntu-latest
-    environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
+    formats-check:
+        name: 'Formats Check'
+        runs-on: ubuntu-latest
 
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
 
-    steps:
-      - name: "📥 checkout repository"
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+            - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
 
-      - name: "🔄  Cache node_modules"
-        uses: actions/cache@v3
-        with:
-            path: ~/.npm
-            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-            restore-keys: ${{ runner.os }}-node-
-      
-      - name: "🔧  Setup NodeJS ${{ env.NODE_VERSION }}"
-        uses: actions/setup-node@v3
-        with:
-            node-version: ${{ env.NODE_VERSION }}
+            - name: '🔧 Install dependencies'
+              run: yarn install
 
-      - name: "🔧 Install npm@latest"
-        run: npm i -g npm@latest  
+            - name: 'Format Check'
+              run: yarn run formats:check
 
+    test:
+        name: 'Automated Tests'
+        runs-on: ubuntu-latest
 
-      - name: "📦  Install Component Library Build dependencies"
-        run: |
-          bash modulize -e production -m generic-library -p install
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
 
-      - name: "🏗️  Build Frontend Component Library"
-        run: |
-          bash modulize -e production -m generic-library -p build
+            - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
 
-      - name: "🚚  Package Component Library"
-        run: |
-          mkdir -p package/dist
-          cp -r frontend/generic-library/dist/* package/dist
+            - name: '🔧 Install dependencies'
+              run: yarn install
 
-      - name: "🔧 Setup Pages"
-        uses: actions/configure-pages@v3
+            - name: 'Run Tests'
+              run: yarn run test
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: './package/dist'
+            - name: 'Upload coverage artifact'
+              uses: actions/upload-artifact@v3
+              with:
+                  name: coverage-${{ github.run_number }}-${{ github.run_id }}
+                  path: './package/coverage/'
 
-      - name: "🚀 Deploy to GitHub Pages"
-        id: deployment
-        uses: actions/deploy-pages@v2
+    vrt-chromatic:
+        name: 'Visual Regression Testing w. Chromatic'
+        runs-on: ubuntu-latest
+        needs: [test, formats-check]
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
+
+            - name: '🔧 Install dependencies'
+              run: yarn install
+
+            - name: '🌈 Run VRT w. Chromatic'
+              env:
+                  CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+              run: yarn test:chromatic
+
+    deploy-preview-gh-pages:
+        name: 'Deploy Preview to GitHub Pages PREVIEW env.'
+        runs-on: ubuntu-latest
+        needs: [vrt-chromatic]
+        steps:
+            - name: 'Build /apps'
+              run: echo "Build /apps - TO BE IMPLEMENTED"
+
+    deploy-storybook-preview-netlify:
+        name: 'Deploy Storybook to Netlify PREVIEW env.'
+        runs-on: ubuntu-latest
+        needs: [vrt-chromatic]
+        steps:
+            - name: 'Build /storybook'
+              run: echo "Build /storybook - TO BE IMPLEMENTED"
+# @TODO: to run the build - assets need to processed and uploaded to a CDN
+# - name: '📦  Install Component Library Build dependencies'
+#   run: |
+#       bash modulize -e production -m generic-library -p install
+
+# - name: '🏗️  Build Frontend Component Library'
+#   run: |
+#       bash modulize -e production -m generic-library -p build
+
+# - name: '🚚  Package Component Library'
+#   run: |
+#       mkdir -p package/dist
+#       cp -r frontend/generic-library/dist/* package/dist
+
+# - name: '🔧 Setup Pages'
+#   uses: actions/configure-pages@v3
+
+# - name: Upload artifact
+#   uses: actions/upload-pages-artifact@v2
+#   with:
+#       # Upload entire repository
+#       path: './package/dist'
+
+# - name: '🚀 Deploy to GitHub Pages'
+#   id: deployment
+#   uses: actions/deploy-pages@v2

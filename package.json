@@ -1,19 +1,60 @@
 {
-  "name": "prj--reactjs-component-lib",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulAlexSerban/prj--reactjs-component-lib.git"
-  },
-  "author": "Paul Serban",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/paulAlexSerban/prj--reactjs-component-lib/issues"
-  },
-  "homepage": "https://github.com/paulAlexSerban/prj--reactjs-component-lib#readme"
+    "name": "@prj--reactjs-component-lib/core",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Paul Serban",
+    "license": "MIT",
+    "scripts": {
+        "prepare": "husky install",
+        "formats:check": "yarn prettier --check .",
+        "formats:write": "yarn prettier --write .",
+        "start": "yarn formats:write && yarn lerna run start --stream --parallel",
+        "test": "yarn formats:write && yarn lerna run test --stream --parallel",
+        "start:storybook": "yarn formats:write && yarn lerna run start:storybook --stream --parallel",
+        "test:chromatic": "yarn formats:write && yarn lerna run test:chromatic --stream --parallel",
+        "build:dev": "yarn formats:write && lerna run build:dev --stream",
+        "build:prod": "yarn formats:write && lerna run build:prod --stream",
+        "lint": "yarn formats:write && lerna run lint",
+        "dev:generic-lib": "lerna run start --scope=@prj--reactjs-component-lib/generic-lib --stream",
+        "process:assets": "lerna run process --scope=@prj--reactjs-component-lib/media-assets --stream",
+        "version": "bash tools/build-scripts/version.bash",
+        "commit": "yarn git-cz"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^17.7.2",
+        "@commitlint/config-conventional": "^17.7.0",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.3",
+        "lerna": "^7.3.0",
+        "prettier": "^3.0.3"
+    },
+    "workspaces": {
+        "packages": [
+            "assets/*",
+            "assets/",
+            "backend/*",
+            "database/*",
+            "frontend/*",
+            "frontend/**/*",
+            "shared/*",
+            "shared/**/*",
+            "tools/*"
+        ],
+        "nohoist": [
+            "**/normalize-scss"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "private": true
 }

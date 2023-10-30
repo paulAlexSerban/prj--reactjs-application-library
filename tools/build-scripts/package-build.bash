@@ -3,7 +3,7 @@
 cd "$(dirname "$0")" || exit
 
 echo "📦  Package"
-rm -rfv ../dist/*
-mkdir -p ../dist/component-library
-cp -rfv ../../frontend/component-library/dist/* ../dist/component-library
-cp -rfv ../../frontend/dashboard/out/* ../dist/
+# rm -rfv ../dist/*
+# mkdir -p ../dist/component-library
+# cp -rfv ../../frontend/component-library/dist/* ../dist/component-library
+# cp -rfv ../../frontend/dashboard/out/* ../dist/

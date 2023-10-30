@@ -128,10 +128,56 @@ jobs:
                   CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
 
+    build-n-package:
+        name: 'Build & Package'
+        runs-on: ubuntu-latest
+        needs: [vrt-chromatic]
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+                      assets/**/*
+                      backend/**/*
+                      database/**/*
+
+            - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
+
+            - name: '🔧 Install dependencies'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              run: yarn install
+
+            - name: 'Run Build'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              run: yarn run build:prod
+
+            - name: 'Package ./apps'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              run: yarn run package
+
+            - name: 'Upload coverage artifact'
+              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              uses: actions/upload-artifact@v3
+              with:
+                  name: coverage-${{ github.run_number }}-${{ github.run_id }}
+                  path: './package/apps/'
+
     deploy-preview-gh-pages:
         name: 'Deploy Preview to GitHub Pages PREVIEW env.'
         runs-on: ubuntu-latest
-        needs: [vrt-chromatic]
+        needs: [vrt-chromatic, build-n-package]
         steps:
             - name: '📥 checkout repository'
               uses: actions/checkout@v3

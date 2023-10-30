@@ -86,6 +86,10 @@ jobs:
               if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn run test
 
+            - name: 'Package ./coverage'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              run: yarn run package
+
             - name: 'Upload coverage artifact'
               if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-artifact@v3

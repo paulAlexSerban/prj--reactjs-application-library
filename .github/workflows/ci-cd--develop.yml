@@ -39,11 +39,11 @@ jobs:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
-            - name: '🔧 Install dependencies'
-              run: yarn install
+            # - name: '🔧 Install dependencies'
+            #   run: yarn install
 
-            - name: 'Format Check'
-              run: yarn run formats:check
+            # - name: 'Format Check'
+            #   run: yarn run formats:check
 
     test:
         name: 'Automated Tests'
@@ -72,22 +72,22 @@ jobs:
                   done
 
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn install
 
             - name: 'Run Tests'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn run test
 
             - name: 'Upload coverage artifact'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               uses: actions/upload-artifact@v3
               with:
                   name: coverage-${{ github.run_number }}-${{ github.run_id }}
@@ -112,18 +112,18 @@ jobs:
                       frontend/**/*
 
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn install
 
             - name: '🌈 Run VRT w. Chromatic'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               env:
                   CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
@@ -149,29 +149,29 @@ jobs:
                       database/**/*
 
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn install
 
             - name: 'Run Build'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn run build:prod
 
             - name: 'Package ./apps'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: yarn run package
 
-            - name: 'Upload coverage artifact'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+            - name: 'Upload apps artifact'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               uses: actions/upload-artifact@v3
               with:
-                  name: coverage-${{ github.run_number }}-${{ github.run_id }}
+                  name: apps-${{ github.run_number }}-${{ github.run_id }}
                   path: './package/apps/'
 
     deploy-preview-gh-pages:
@@ -195,7 +195,7 @@ jobs:
                       database/**/*
 
             - name: 'Build /apps'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: echo "Build /apps - TO BE IMPLEMENTED"
 
     deploy-storybook-preview-netlify:
@@ -218,7 +218,7 @@ jobs:
                       backend/**/*
                       database/**/*
             - name: 'Build /storybook'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
+              if: steps.changed-test.files.outputs.any_changed == 'true'
               run: echo "Build /storybook - TO BE IMPLEMENTED"
 # @TODO: to run the build - assets need to processed and uploaded to a CDN
 # - name: '📦  Install Component Library Build dependencies'

@@ -254,6 +254,23 @@ jobs:
                       assets/**/*
                       backend/**/*
                       database/**/*
-            - name: 'Build /storybook'
+
+            - name: 'Create package/storybook'
               if: steps.changed-test-files.outputs.any_changed == 'true'
-              run: echo "Build /storybook - TO BE IMPLEMENTED"
+              run: mkdir -p package/storybook
+
+            - uses: actions/download-artifact@v3
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              with:
+                  name: storybook-${{ github.run_number }}-${{ github.run_id }}
+                  path: package/storybook
+
+            - name: '🚀 Deploy to Netlify'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: nwtgck/actions-netlify@v2.0
+              with:
+                publish-dir: './package/storybook'
+              env:
+                NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+              timeout-minutes: 1

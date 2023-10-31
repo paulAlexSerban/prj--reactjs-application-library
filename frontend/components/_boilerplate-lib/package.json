@@ -1,13 +1,14 @@
 {
     "name": "@prj--reactjs-component-lib/boilerplate-lib",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "module": "lib/index.js",
     "license": "MIT",
     "scripts": {
         "start": "bash scripts/start.bash",
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
-        "build:prod": "bash scripts/build-prod.bash"
+        "build:prod": "bash scripts/build-prod.bash",
+        "build:storybook": "bash scripts/build-prod.bash"
     },
     "devDependencies": {
         "react": "^18.2.0",

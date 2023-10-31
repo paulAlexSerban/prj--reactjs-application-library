@@ -1,39 +1,39 @@
-import { ConceptCard, ConceptHeader } from '@prj--reactjs-component-lib/generic-lib';
+import CORE_CONCEPTS from './data/core-concepts.json';
 
 import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/products/conceptCards.css';
+import '@prj--reactjs-component-lib/generic-lsg/lib/products/reactEssentials.css';
 
-const concepts = [
-    {
-        title: 'Components',
-        image: 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/components-original.webp',
-        description:
-            'Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can receive data via props, and they can render dynamic output using JSX.',
-    },
-    {
-        title: 'State',
-        image: 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/state-original.webp',
-        description:
-            'State is data that may change over time. As it changes, the UI should be updated to reflect the updated data. Each component can maintain its own state and multiple components can share state.',
-    },
-    {
-        title: 'Events',
-        image: 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/events-original.webp',
-        description:
-            'Event handlers are added via props to (built-in) components. You pass functions as values to such event handlers to control which functions gets executed for which event.',
-    },
-];
+import Header from './components/organisms/Header';
+import Section from './components/organisms/Section';
+import CardList from './components/molecules/CardList';
+import Card from './components/molecules/Card';
+
+// Dynamic content example
+import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
+const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+const dynamicDescription = choice(reactDescriptions);
+
+const headerImg = {
+    headingText: 'React Essentials',
+    imgSrc: 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/react-core-concepts-original.webp',
+    imgAlt: 'Stylized atom.',
+    descriptionText: `${dynamicDescription} React concepts you will need for almost any app you are going to build!`,
+};
 
 const App = () => {
     return (
-        <div className="conceptCards">
-            <ConceptHeader imgSrc="https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/key-concepts-original.webp" />
-            <ul id="concepts">
-                {concepts.map((concept) => (
-                    <ConceptCard image={concept.image} title={concept.title} description={concept.description} />
-                ))}
-            </ul>
-        </div>
+        <>
+            <Header {...headerImg} />
+            <main className="rea-main">
+                <Section heading="Core Concepts">
+                    <CardList>
+                        {CORE_CONCEPTS.map((coreConcept, index) => (
+                            <Card key={index} {...coreConcept} />
+                        ))}
+                    </CardList>
+                </Section>
+            </main>
+        </>
     );
 };
 

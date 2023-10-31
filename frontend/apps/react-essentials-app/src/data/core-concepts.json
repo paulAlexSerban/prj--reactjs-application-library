@@ -1,0 +1,22 @@
+[
+    {
+        "image": "https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/components-v2-original.webp",
+        "title": "Components",
+        "description": "The core UI building block - compose the user interface by combining multiple components."
+    },
+    {
+        "image": "https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/jsx-ui-original.webp",
+        "title": "JSX",
+        "description": "Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered."
+    },
+    {
+        "image": "https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/config-original.webp",
+        "title": "Props",
+        "description": "Make components configurable (and therefore reusable) by passing input data to them."
+    },
+    {
+        "image": "https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/state-mgmt-v2-original.webp",
+        "title": "State",
+        "description": "React-managed data which, when changed, causes the component to re-render & the UI to update."
+    }
+]

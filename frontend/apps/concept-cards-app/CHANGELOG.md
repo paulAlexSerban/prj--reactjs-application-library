@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/concept-cards-app@0.4.0...@prj--reactjs-component-lib/concept-cards-app@0.5.0) (2023-10-31)
+
+### Features
+
+-   **base path:** fixed ([9436eca](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/9436ecafd5addb266153737a53f95922733b9a63))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/concept-cards-app@0.3.0...@prj--reactjs-component-lib/concept-cards-app@0.4.0) (2023-10-30)
 
 ### Features

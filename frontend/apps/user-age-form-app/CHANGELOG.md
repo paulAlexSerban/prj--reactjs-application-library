@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/user-age-form-app@0.3.1...@prj--reactjs-component-lib/user-age-form-app@0.4.0) (2023-10-31)
+
+### Features
+
+-   **base path:** fixed ([9436eca](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/9436ecafd5addb266153737a53f95922733b9a63))
+-   ci ([47a6f59](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/47a6f59f8bb29fbc25e36b28fd96495e0cf9a38a))
+
 ## [0.3.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/user-age-form-app@0.3.0...@prj--reactjs-component-lib/user-age-form-app@0.3.1) (2023-10-30)
 
 **Note:** Version bump only for package @prj--reactjs-component-lib/user-age-form-app

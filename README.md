@@ -1,5 +1,11 @@
 # [React Component Library (JavaScript)](https://paulalexserban.github.io/prj--reactjs-component-lib/)
 
+## Env URL's
+
+-   [DEV Apps (Gh. Pages)](https://paulalexserban.github.io/prj--reactjs-component-lib/)
+-   [DEV Storybook (Netlify)](https://dev-prj-reactjs-component-lib.netlify.app)
+-   [Visual Regression Testing (Chromatic Storybook)](https://www.chromatic.com/builds?appId=65377a1a1bdfa753f1c280b8)
+
 ## 1. Introduction
 
 ## 2. Project Structure
@@ -65,12 +71,27 @@
 -   [x] implement husky
 -   [x] implement commitlint and commitizen
 -   [x] implement semantic-release
--   [ ] deploy storybook to Netlify
--   [ ] process and publish assets to AWS S3
--   [ ] build and package apps in `./package/apps`
+-   [x] DEV - deploy storybook to Netlify
+-   [x] DEV - deploy apps to Gh. Pages
+-   [ ] TEST - deploy apps to AWS Amplify
+    -   [ ] setup AWS Amplify
+        -   [ ] use HTTP authentication function
+    -   [ ] setup AWS Route 53
+-   [ ] TEST - deploy storybook to Surge.sh
+-   [ ] STAGE - deploy apps to AWS S3
+    -   [ ] setup AWS S3 bucket
+    -   [ ] setup AWS CloudFront
+        -   [ ] use HTTP authentication function
+    -   [ ] setup AWS Route 53
+-   [ ] PROD - deploy apps to AWS S3
+-   [x] process and publish assets to AWS S3
+-   [x] build and package apps in `./package/apps`
 -   [ ] integration tests
 -   [ ] e2e tests
 -   [ ] refactor CI build for better performance (use CI for better performance)
     -   [ ] lint, formats and test
         -   [ ] -   run locally on committing for development branches
         -   [ ] -   run in CI for master branch and on pull requests to release branches
+-   [ ] implement sematic release on release branch
+    -   [ ] use `semantic-release` to bump version of all packages using Lerna
+    -   [ ] use `semantic-release` to bump version of main project

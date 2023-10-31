@@ -102,6 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
-/package/component-library
+package
 **/public/*/*
 lib
+assets/media/src/images/*
+assets/media/src/videos/*

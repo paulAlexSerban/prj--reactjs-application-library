@@ -6,6 +6,8 @@ source ../.env
 echo "🌈 Chromatic"
 echo "🌈 Chromatic: Starting build"
 
-yarn chromatic --project-token=$CHROMATIC_PROJECT_TOKEN \
-               --build-script-name=build:storybook \
-               --no-interactive
+yarn --cwd .. run build:storybook
+
+yarn --cwd .. chromatic --project-token=$CHROMATIC_PROJECT_TOKEN \
+                        --storybook-build-dir=dist \
+                        --no-interactive

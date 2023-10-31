@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/shared-utils-js@0.2.1...@prj--reactjs-component-lib/shared-utils-js@0.2.2) (2023-10-31)
+
+**Note:** Version bump only for package @prj--reactjs-component-lib/shared-utils-js
+
+## [0.2.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/shared-utils-js@0.2.0...@prj--reactjs-component-lib/shared-utils-js@0.2.1) (2023-10-30)
+
+**Note:** Version bump only for package @prj--reactjs-component-lib/shared-utils-js
+
 # [0.2.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/shared-utils-js@0.1.0...@prj--reactjs-component-lib/shared-utils-js@0.2.0) (2023-10-30)
 
 ### Features

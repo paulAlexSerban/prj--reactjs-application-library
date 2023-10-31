@@ -3,13 +3,13 @@ import { useCallback, useReducer } from 'react';
 import randomWord from '@prj--reactjs-component-lib/shared-utils-js/src/foundation/words';
 import { ALPHABET_LOWERCASE } from '@prj--reactjs-component-lib/shared-utils-js/src/foundation/alphabet';
 
-import img0 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-0-original.webp';
-import img1 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-1-original.webp';
-import img2 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-2-original.webp';
-import img3 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-3-original.webp';
-import img4 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-4-original.webp';
-import img5 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-5-original.webp';
-import img6 from '@prj--reactjs-component-lib/media-assets/dist/images/hangman-6-original.webp';
+const img0 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-0-original.webp';
+const img1 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-1-original.webp';
+const img2 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-2-original.webp';
+const img3 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-3-original.webp';
+const img4 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-4-original.webp';
+const img5 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-5-original.webp';
+const img6 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-6-original.webp';
 
 const initialState = {
     nWrong: 0,

@@ -1,6 +1,6 @@
 {
     "name": "@prj--reactjs-component-lib/generic-lib",
-    "version": "0.2.0",
+    "version": "0.3.1",
     "license": "MIT",
     "module": "lib/index.js",
     "scripts": {
@@ -10,8 +10,10 @@
         "lint": "echo \"No linting configured\"",
         "build:dev": "bash scripts/build-dev.bash",
         "build:prod": "bash scripts/build-prod.bash",
-        "test": "bash scripts/test.bash",
-        "test:watch": "jest --watch"
+        "test": "jest --verbose --coverage",
+        "test:watch": "jest --watch",
+        "package": "bash scripts/package.bash",
+        "build:storybook": "bash scripts/build-prod.bash"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^6.1.4",

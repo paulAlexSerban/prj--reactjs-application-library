@@ -1,4 +1,6 @@
-import logo from '@prj--reactjs-component-lib/media-assets/dist/images/investment-calculator-logo-original.webp';
+const logo =
+    'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/investment-calculator-logo-original.webp';
+
 import classes from './Header.module.css';
 
 const Header = () => {

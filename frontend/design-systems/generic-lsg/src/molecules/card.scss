@@ -1,0 +1,9 @@
+.card {
+    flex: 1;
+    text-align: center;
+
+    &__img {
+        width: 7rem;
+        object-fit: cover;
+    }
+}

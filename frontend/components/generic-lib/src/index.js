@@ -1,4 +1,4 @@
-import Text from './atoms/Text';
+import Paragraph from './atoms/Paragraph';
 import Color from './atoms/Color';
 import Button from './atoms/Button';
 import Margin from './atoms/Margin';
@@ -10,4 +10,4 @@ import { Rating } from './molecules/Rating';
 
 import { ConceptHeader } from './organisms/Header';
 
-export { Text, Color, Button, Margin, Star, ConceptCard, ConceptHeader, Counter, Rating };
+export { Paragraph, Color, Button, Margin, Star, ConceptCard, ConceptHeader, Counter, Rating };

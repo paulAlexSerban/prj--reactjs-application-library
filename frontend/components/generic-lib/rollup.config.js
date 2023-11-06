@@ -4,7 +4,7 @@ const babel = require('@rollup/plugin-babel');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const input = [
     './src/index.js',
-    './src/atoms/Text/index.js',
+    './src/atoms/Paragraph/index.js',
     './src/atoms/Color/index.js',
     './src/atoms/Button/index.js',
     './src/atoms/Star/index.js',

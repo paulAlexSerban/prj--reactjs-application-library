@@ -18,5 +18,8 @@ const meta = {
 export default meta;
 
 export const Base = {
-    args: {},
+    args: {
+        color: '#f0f0f0',
+        radius: '4px',
+    },
 };

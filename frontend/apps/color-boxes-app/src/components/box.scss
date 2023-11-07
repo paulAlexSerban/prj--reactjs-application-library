@@ -1,4 +1,4 @@
 .box {
     height: 20em;
-    width: 20em;
+    min-width: calc(100% / 5);
 }

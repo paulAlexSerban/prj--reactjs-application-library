@@ -1,3 +1,4 @@
+import './components/index.scss';
 import BoxContainer from './components/BoxContainer';
 
 const App = () => {

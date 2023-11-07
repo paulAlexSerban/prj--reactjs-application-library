@@ -35,6 +35,7 @@ export const Primary = {
 
 export const Secondary = {
     args: {
+        primary: false,
         label: 'Button',
         radius: 'rounded',
     },

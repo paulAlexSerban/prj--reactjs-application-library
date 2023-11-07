@@ -23,7 +23,7 @@ const CoinContainer = ({ coins }) => {
     return (
         <div className="coinContainer">
             <h2>Let's Flip A Coin!</h2>
-            {currCoin ? <Coin info={currCoin} /> : <div className="coinContainer__placeholder">Click to Flip!</div>}
+            <Coin info={currCoin} />
             <button onClick={handleClick}>Flip Me!</button>
             <p>
                 Out of {nFlips} flips, there have been {nHeads} heads and {nTails} tails.

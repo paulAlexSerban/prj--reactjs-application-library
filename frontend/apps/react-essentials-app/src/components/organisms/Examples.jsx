@@ -1,7 +1,8 @@
-import Tabs from '../molecules/Tabs';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
 
-import Heading from '../atoms/Heading';
-import Paragraph from '../atoms/Paragraph';
+import { Heading, Paragraph } from '@prj--reactjs-component-lib/generic-lib';
+import Tabs from '../molecules/Tabs';
 import Section from '../molecules/Section';
 import TabButton from '../atoms/TabButton';
 

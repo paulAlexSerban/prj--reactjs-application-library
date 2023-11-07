@@ -3,20 +3,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    button {
-        max-width: calc(100% / 12 * 3);
-        padding: 16px;
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        border-radius: 4px;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        }
-    }
-
-
 }

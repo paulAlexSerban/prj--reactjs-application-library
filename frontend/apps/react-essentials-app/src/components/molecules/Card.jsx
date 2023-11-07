@@ -1,13 +1,15 @@
-import Paragraph from '../atoms/Paragraph';
-import Heading from '../atoms/Heading';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
 import '@prj--reactjs-component-lib/generic-lsg/lib/molecules/card.css';
+
+import { Heading, Paragraph } from '@prj--reactjs-component-lib/generic-lib';
 
 const Card = ({ image, title, description, ...props }) => {
     return (
         <li className="card" {...props}>
             <img className="card__img" src={image} alt={title} />
             <Heading title={title} level={3} />
-            <Paragraph>{description}</Paragraph>
+            <Paragraph size="lg">{description}</Paragraph>
         </li>
     );
 };

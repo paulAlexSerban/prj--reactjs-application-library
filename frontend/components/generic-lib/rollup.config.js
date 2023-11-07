@@ -6,6 +6,7 @@ const input = [
     './src/index.js',
     './src/atoms/Paragraph/index.js',
     './src/atoms/Color/index.js',
+    './src/atoms/Heading/index.js',
     './src/atoms/Button/index.js',
     './src/atoms/Icon/index.js',
     './src/atoms/Margin/index.js',

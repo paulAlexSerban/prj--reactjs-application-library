@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
 import Coin from './Coin';
+
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
+import { Button } from '@prj--reactjs-component-lib/generic-lib';
+
 import './coinContainer.scss';
 const CoinContainer = ({ coins }) => {
     const [currCoin, setCurrCoin] = useState(null);
@@ -24,7 +28,7 @@ const CoinContainer = ({ coins }) => {
         <div className="coinContainer">
             <h2>Let's Flip A Coin!</h2>
             <Coin info={currCoin} />
-            <button onClick={handleClick}>Flip Me!</button>
+            <Button label="Flip Me!" onClick={handleClick} radius="rounded" size="large" />
             <p>
                 Out of {nFlips} flips, there have been {nHeads} heads and {nTails} tails.
             </p>

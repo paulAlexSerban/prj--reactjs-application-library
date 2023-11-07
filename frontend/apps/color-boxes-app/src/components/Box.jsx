@@ -1,7 +1,7 @@
 import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
 import { useState, useEffect } from 'react';
 import './box.scss';
-const Box = ({ colors }) => {
+const Box = ({ colors, ...props }) => {
     const [color, setColor] = useState('purple');
 
     const pickColor = () => {
@@ -21,7 +21,7 @@ const Box = ({ colors }) => {
         pickColor();
     }, []);
 
-    return <div className="box" style={{ backgroundColor: color }} onClick={handleClick} />;
+    return <div className="box" style={{ backgroundColor: color }} onClick={handleClick} {...props}/>;
 };
 
 export default Box;

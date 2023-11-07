@@ -1,3 +1,11 @@
+@use '../foundation/all' as *;
+
 .star {
     cursor: pointer;
+
+    @each $size, $value in $fs {
+        &--#{$size} {
+            font-size: $value;
+        }
+    }
 }

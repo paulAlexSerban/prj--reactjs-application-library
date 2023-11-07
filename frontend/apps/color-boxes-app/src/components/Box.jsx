@@ -21,7 +21,7 @@ const Box = ({ colors, ...props }) => {
         pickColor();
     }, []);
 
-    return <div className="box" style={{ backgroundColor: color }} onClick={handleClick} {...props}/>;
+    return <div className="box" style={{ backgroundColor: color }} onClick={handleClick} {...props} />;
 };
 
 export default Box;

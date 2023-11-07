@@ -16,7 +16,7 @@ const Icon = ({
     const WrapperEl = wrapper;
 
     const icon = {
-        star: <FaStar onClick={onAction} color={active ? colors.active : colors.default}  {...props}/>,
+        star: <FaStar onClick={onAction} color={active ? colors.active : colors.default} {...props} />,
     };
 
     const selectedIcon = icon[iconName] || <FaGlobe title="Globe" />;

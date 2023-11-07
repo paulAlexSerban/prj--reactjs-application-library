@@ -15,7 +15,7 @@ const Rating = ({ number = 5 }) => {
             iconName="star"
             classNames={['star']}
             key={index}
-            onAction={e => handleSelect(e, index)}
+            onAction={(e) => handleSelect(e, index)}
             active={index < selected}
         />
     ));

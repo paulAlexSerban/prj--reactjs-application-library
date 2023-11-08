@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/investment-calculator-app",
+    "name": "@prj--reactjs-application-library/investment-calculator-app",
     "private": true,
     "version": "0.6.0",
     "scripts": {
@@ -23,8 +23,8 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/generic-lib": "^0.4.0",
-        "@prj--reactjs-component-lib/generic-lsg": "^0.4.0",
-        "@prj--reactjs-component-lib/media-assets": "^0.5.0"
+        "@prj--reactjs-application-library/generic-lib": "^0.4.0",
+        "@prj--reactjs-application-library/generic-lsg": "^0.4.0",
+        "@prj--reactjs-application-library/media-assets": "^0.5.0"
     }
 }

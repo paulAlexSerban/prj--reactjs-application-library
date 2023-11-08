@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/boilerplate-lib",
+    "name": "@prj--reactjs-application-library/boilerplate-lib",
     "version": "0.3.2",
     "module": "lib/index.js",
     "license": "MIT",

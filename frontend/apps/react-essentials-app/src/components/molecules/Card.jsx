@@ -1,8 +1,8 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/molecules/card.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/paragraph.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/heading.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/molecules/card.css';
 
-import { Heading, Paragraph } from '@prj--reactjs-component-lib/generic-lib';
+import { Heading, Paragraph } from '@prj--reactjs-application-library/generic-lib';
 
 const Card = ({ image, title, description, ...props }) => {
     return (

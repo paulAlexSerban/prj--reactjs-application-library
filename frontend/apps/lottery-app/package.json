@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/lottery-app",
+    "name": "@prj--reactjs-application-library/lottery-app",
     "private": true,
     "version": "0.4.1",
     "scripts": {
@@ -23,7 +23,7 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/boilerplate-lib": "^0.3.2",
-        "@prj--reactjs-component-lib/boilerplate-lsg": "^0.4.0"
+        "@prj--reactjs-application-library/boilerplate-lib": "^0.3.2",
+        "@prj--reactjs-application-library/boilerplate-lsg": "^0.4.0"
     }
 }

@@ -48,7 +48,7 @@ const router = createBrowserRouter(
             element: <product.component />,
         })),
     ],
-    { basename: import.meta.env.DEV ? '/' : '/prj--reactjs-component-lib/' }
+    { basename: import.meta.env.DEV ? '/' : '/prj--reactjs-application-library/' }
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(

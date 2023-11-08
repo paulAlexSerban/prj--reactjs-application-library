@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/color-boxes-app",
+    "name": "@prj--reactjs-application-library/color-boxes-app",
     "private": true,
     "version": "0.5.0",
     "scripts": {
@@ -23,6 +23,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/shared-utils-js": "^0.3.0"
+        "@prj--reactjs-application-library/shared-utils-js": "^0.3.0"
     }
 }

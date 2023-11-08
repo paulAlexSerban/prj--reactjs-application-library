@@ -1,7 +1,7 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/organisms/header.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
-import { Heading, Paragraph } from '@prj--reactjs-component-lib/generic-lib';
+import '@prj--reactjs-application-library/generic-lsg/lib/organisms/header.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/heading.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/paragraph.css';
+import { Heading, Paragraph } from '@prj--reactjs-application-library/generic-lib';
 
 const Header = ({ headingText, descriptionText, imgSrc, imgAlt }) => {
     return (

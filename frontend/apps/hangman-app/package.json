@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/hangman-app",
+    "name": "@prj--reactjs-application-library/hangman-app",
     "private": true,
     "version": "0.8.0",
     "scripts": {
@@ -23,6 +23,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/media-assets": "^0.5.0"
+        "@prj--reactjs-application-library/media-assets": "^0.5.0"
     }
 }

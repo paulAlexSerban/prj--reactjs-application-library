@@ -1,8 +1,8 @@
-# [React Component Library (JavaScript)](https://paulalexserban.github.io/prj--reactjs-component-lib/)
+# [React Component Library (JavaScript)](https://paulalexserban.github.io/prj--reactjs-application-library/)
 
 ## Env URL's
 
--   [DEV Apps (Gh. Pages)](https://paulalexserban.github.io/prj--reactjs-component-lib/)
+-   [DEV Apps (Gh. Pages)](https://paulalexserban.github.io/prj--reactjs-application-library/)
 -   [DEV Storybook (Netlify)](https://dev-prj-reactjs-component-lib.netlify.app)
 -   [Visual Regression Testing (Chromatic Storybook)](https://www.chromatic.com/builds?appId=65377a1a1bdfa753f1c280b8)
 

@@ -2,7 +2,7 @@ import Section from '../molecules/Section';
 import CardList from '../molecules/CardList';
 import Card from '../molecules/Card';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/organisms/teaserList.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/organisms/teaserList.css';
 
 const TeaserList = ({ cards, title, ...props }) => {
     return (

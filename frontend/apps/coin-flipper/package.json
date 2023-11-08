@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/coin-flipper-app",
+    "name": "@prj--reactjs-application-library/coin-flipper-app",
     "private": true,
     "version": "0.5.0",
     "scripts": {
@@ -23,8 +23,8 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/generic-lib": "^0.4.0",
-        "@prj--reactjs-component-lib/generic-lsg": "^0.4.0",
-        "@prj--reactjs-component-lib/shared-utils-js": "^0.3.0"
+        "@prj--reactjs-application-library/generic-lib": "^0.4.0",
+        "@prj--reactjs-application-library/generic-lsg": "^0.4.0",
+        "@prj--reactjs-application-library/shared-utils-js": "^0.3.0"
     }
 }

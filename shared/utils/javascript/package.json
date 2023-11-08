@@ -1,5 +1,5 @@
 {
-    "name": "@prj--reactjs-component-lib/shared-utils-js",
+    "name": "@prj--reactjs-application-library/shared-utils-js",
     "version": "0.3.0",
     "main": "index.js",
     "license": "MIT",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/color-boxes-app@0.4.0...@prj--reactjs-component-lib/color-boxes-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([10124b8](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/10124b85d9260ac3c1f12243dfd224e15f2ff101))
+-   **icon:** star to icon ([66441c3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/66441c346c41da6de5139894558be64060a0206c))
+-   rename ([5836a4a](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/5836a4a438310a321ee9024971f3d58e9d2bb23c))
+-   small changes ([1a5d130](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/1a5d13041cf20d26020764e5df258eec0a23dc3f))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/color-boxes-app@0.3.0...@prj--reactjs-component-lib/color-boxes-app@0.4.0) (2023-10-31)
 
 ### Bug Fixes

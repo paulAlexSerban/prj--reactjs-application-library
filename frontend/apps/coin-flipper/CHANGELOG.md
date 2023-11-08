@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/coin-flipper-app@0.4.0...@prj--reactjs-component-lib/coin-flipper-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([bdc0a92](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/bdc0a92044bd5b3691ec5f56c9ea2f86e3a7802e))
+-   cleanup fix ([120fdea](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/120fdeab392739c535161d5a84eea9c3fe337961))
+-   small ([db05824](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/db058246d33147457fe76222e53d778c0b9e4fff))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/coin-flipper-app@0.3.0...@prj--reactjs-component-lib/coin-flipper-app@0.4.0) (2023-10-31)
 
 ### Features

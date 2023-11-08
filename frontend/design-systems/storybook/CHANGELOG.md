@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/storybook@0.4.0...@prj--reactjs-component-lib/storybook@0.5.0) (2023-11-08)
+
+### Bug Fixes
+
+-   styles ([26dc969](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/26dc969af330dda8d62faf01cd1de9e6ece542fd))
+
+### Features
+
+-   **paragraph:** from text to paragraph ([43952f3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/43952f31ec26c6e1fefd16513e1053fe5b857345))
+-   **storybook:** bump version ([2eece13](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/2eece1341533894ea080bb2892d14b9089277a4e))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/storybook@0.3.0...@prj--reactjs-component-lib/storybook@0.4.0) (2023-10-31)
 
 ### Features

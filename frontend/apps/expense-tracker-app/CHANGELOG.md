@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/expense-tracker-app@0.4.0...@prj--reactjs-component-lib/expense-tracker-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([2ede00d](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/2ede00d0519aa9857de4906406eae8c8b6dc7e2b))
+-   cleanup ([c9a33b7](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/c9a33b7d30ea76795eddc63df5c086c11131aca5))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/expense-tracker-app@0.3.1...@prj--reactjs-component-lib/expense-tracker-app@0.4.0) (2023-10-31)
 
 ### Features

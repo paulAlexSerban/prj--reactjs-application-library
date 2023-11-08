@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/color-boxes-app",
     "private": true,
-    "version": "0.4.0",
+    "version": "0.5.0",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",
@@ -23,6 +23,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/shared-utils-js": "^0.2.2"
+        "@prj--reactjs-component-lib/shared-utils-js": "^0.3.0"
     }
 }

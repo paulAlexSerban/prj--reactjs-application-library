@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/login-form-app@0.4.0...@prj--reactjs-component-lib/login-form-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([f02ce8f](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/f02ce8fc7ff57b5b5d0514d0744105b0f887e0ed))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/login-form-app@0.3.1...@prj--reactjs-component-lib/login-form-app@0.4.0) (2023-10-31)
 
 ### Features

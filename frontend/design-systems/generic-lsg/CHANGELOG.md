@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/generic-lsg@0.3.1...@prj--reactjs-component-lib/generic-lsg@0.4.0) (2023-11-08)
+
+### Bug Fixes
+
+-   styles ([26dc969](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/26dc969af330dda8d62faf01cd1de9e6ece542fd))
+
+### Features
+
+-   cleanup ([fe007c8](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/fe007c8c6119a0a7f875b185dfd586117dc24fbe))
+-   cleanup ([e0b8abc](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/e0b8abce990c1f5cfd6cf7611a534da53fea446b))
+-   cleanup ([054e587](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/054e587ee273e2c7254472f3d072ed1f299c22c4))
+-   cleanup ([bdc0a92](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/bdc0a92044bd5b3691ec5f56c9ea2f86e3a7802e))
+-   cleanup fix ([120fdea](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/120fdeab392739c535161d5a84eea9c3fe337961))
+-   **icon:** star to icon ([66441c3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/66441c346c41da6de5139894558be64060a0206c))
+-   **paragraph:** from text to paragraph ([43952f3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/43952f31ec26c6e1fefd16513e1053fe5b857345))
+-   **react essentials app:** course implementation ([bb97dc5](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/bb97dc5c0793c9e19bc5b01da1733f97d91988b4))
+-   **react-essentials:** added core concepts ([c39d7ab](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/c39d7ab1412af79df1e6602da05f4b08cd1e3e54))
+
 ## [0.3.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/generic-lsg@0.3.0...@prj--reactjs-component-lib/generic-lsg@0.3.1) (2023-10-31)
 
 **Note:** Version bump only for package @prj--reactjs-component-lib/generic-lsg

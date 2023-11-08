@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.4.0 (2023-11-08)
+
+### Bug Fixes
+
+-   **rename:** rename ([fa982ac](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/fa982ac05c386e2f9563611d754b73bc08b54894))
+
+### Features
+
+-   initial imlementation ([baf36b4](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/baf36b495354b25056270e36f8fe9abea9a9d2a0))
+-   **react-essentials:** added core concepts ([c39d7ab](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/c39d7ab1412af79df1e6602da05f4b08cd1e3e54))
+-   **shared js functionw:** added ([c34bef6](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/c34bef6ecbbb22f4b84162df75e056e2e3189a00))
+
 <<<<<<< Updated upstream
 
 # [0.3.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/shared-utils-js@0.2.2...@prj--reactjs-component-lib/shared-utils-js@0.3.0) (2023-11-08)

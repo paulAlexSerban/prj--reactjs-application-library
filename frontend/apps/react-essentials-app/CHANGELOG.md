@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.7.0 (2023-11-08)
+
+### Bug Fixes
+
+-   **rename:** rename ([fa982ac](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/fa982ac05c386e2f9563611d754b73bc08b54894))
+
+### Features
+
+-   cleanup ([fe007c8](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/fe007c8c6119a0a7f875b185dfd586117dc24fbe))
+-   cleanup ([bdc0a92](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/bdc0a92044bd5b3691ec5f56c9ea2f86e3a7802e))
+-   cleanup fix ([120fdea](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/120fdeab392739c535161d5a84eea9c3fe337961))
+-   **react essentials app:** course implementation ([bb97dc5](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/bb97dc5c0793c9e19bc5b01da1733f97d91988b4))
+-   **react-essentials:** added core concepts ([c39d7ab](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/c39d7ab1412af79df1e6602da05f4b08cd1e3e54))
+-   rename ([5836a4a](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/5836a4a438310a321ee9024971f3d58e9d2bb23c))
+
 <<<<<<< Updated upstream
 
 # 0.6.0 (2023-11-08)

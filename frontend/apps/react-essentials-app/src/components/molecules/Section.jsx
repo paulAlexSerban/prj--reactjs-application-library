@@ -1,5 +1,5 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
-import { Heading } from '@prj--reactjs-component-lib/generic-lib';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/heading.css';
+import { Heading } from '@prj--reactjs-application-library/generic-lib';
 
 const Section = ({ children, title, ...props }) => {
     return (

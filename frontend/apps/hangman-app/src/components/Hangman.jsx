@@ -1,7 +1,7 @@
 import './hangman.scss';
 import { useCallback, useReducer } from 'react';
-import randomWord from '@prj--reactjs-component-lib/shared-utils-js/src/foundation/words';
-import { ALPHABET_LOWERCASE } from '@prj--reactjs-component-lib/shared-utils-js/src/foundation/alphabet';
+import randomWord from '@prj--reactjs-application-library/shared-utils-js/src/foundation/words';
+import { ALPHABET_LOWERCASE } from '@prj--reactjs-application-library/shared-utils-js/src/foundation/alphabet';
 
 const img0 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-0-original.webp';
 const img1 = 'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/hangman-1-original.webp';

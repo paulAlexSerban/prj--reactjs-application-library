@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
     };
 
     if (command !== 'serve') {
-        config.base = `/prj--reactjs-component-lib/${PROJECT_NAME}`;
+        config.base = `/prj--reactjs-application-library/${PROJECT_NAME}`;
     }
 
     return config;

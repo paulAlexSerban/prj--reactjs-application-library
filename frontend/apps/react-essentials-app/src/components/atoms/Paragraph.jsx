@@ -1,4 +1,4 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/paragraph.css';
 
 const Paragraph = ({ children }) => {
     return <p className="paragraph">{children}</p>;

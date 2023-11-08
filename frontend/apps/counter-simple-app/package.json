@@ -1,6 +1,6 @@
 {
-    "name": "@prj--reactjs-component-lib/counter-simple-app",
-    "version": "0.5.0",
+    "name": "@prj--reactjs-application-library/counter-simple-app",
+    "version": "0.6.0",
     "main": "index.js",
     "license": "MIT",
     "private": true,
@@ -24,7 +24,7 @@
         "webpack-dev-server": "^4.15.1"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/generic-lib": "^0.4.0",
-        "@prj--reactjs-component-lib/generic-lsg": "^0.4.0"
+        "@prj--reactjs-application-library/generic-lib": "^0.5.0",
+        "@prj--reactjs-application-library/generic-lsg": "^0.5.0"
     }
 }

@@ -1,6 +1,6 @@
-import { Rating } from '@prj--reactjs-component-lib/generic-lib/lib/index';
+import { Rating } from '@prj--reactjs-application-library/generic-lib/lib/index';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/star.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/star.css';
 
 const meta = {
     title: 'Generic/Molecules/Rating',

@@ -1,4 +1,4 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/tabButton.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/tabButton.css';
 
 const TabButton = ({ children, isSelected, ...props }) => {
     return (

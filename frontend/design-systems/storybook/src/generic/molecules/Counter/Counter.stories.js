@@ -1,7 +1,7 @@
-import { Counter } from '@prj--reactjs-component-lib/generic-lib/lib/index';
+import { Counter } from '@prj--reactjs-application-library/generic-lib/lib/index';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/molecules/counter.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/button.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/molecules/counter.css';
 
 const meta = {
     title: 'Generic/Molecules/Counter',

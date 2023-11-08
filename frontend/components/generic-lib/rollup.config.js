@@ -42,5 +42,5 @@ module.exports = {
         preserveModules: true,
     },
     plugins,
-    external: ['react', 'prop-types', 'react-icons/fa', '@prj--reactjs-component-lib/media-assets'],
+    external: ['react', 'prop-types', 'react-icons/fa', '@prj--reactjs-application-library/media-assets'],
 };

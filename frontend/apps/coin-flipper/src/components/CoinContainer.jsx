@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
+import choice from '@prj--reactjs-application-library/shared-utils-js/src/arrays/choice';
 import Coin from './Coin';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
-import { Button } from '@prj--reactjs-component-lib/generic-lib';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/button.css';
+import { Button } from '@prj--reactjs-application-library/generic-lib';
 
 import './coinContainer.scss';
 const CoinContainer = ({ coins }) => {

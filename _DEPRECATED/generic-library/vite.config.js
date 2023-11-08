@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
     };
 
     if (command !== 'serve') {
-        config.base = '/prj--reactjs-component-lib/';
+        config.base = '/prj--reactjs-application-library/';
     }
 
     return config;

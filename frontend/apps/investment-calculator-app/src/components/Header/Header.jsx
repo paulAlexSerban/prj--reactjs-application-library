@@ -1,13 +1,15 @@
 const logo =
     'https://s3.eu-central-1.amazonaws.com/assets.reactjs-component-lib.eu/images/investment-calculator-logo-original.webp';
 
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/heading.css';
+import { Heading } from '@prj--reactjs-component-lib/generic-lib';
 
 const Header = () => {
     return (
         <header className={classes.header}>
             <img src={logo} alt="logo" />
-            <h1>Investment Calculator</h1>
+            <Heading level={1} title="Investment Calculator" />
         </header>
     );
 };

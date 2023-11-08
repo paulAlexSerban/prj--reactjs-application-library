@@ -13,7 +13,7 @@ module.exports = {
         filename: 'bundle.[chunkhash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: NODE_ENV === 'development' ? '/' : `/prj--reactjs-component-lib/${PROJECT_NAME}/`,
+        publicPath: NODE_ENV === 'development' ? '/' : `/prj--reactjs-application-library/${PROJECT_NAME}/`,
     },
     mode: NODE_ENV,
     module: {

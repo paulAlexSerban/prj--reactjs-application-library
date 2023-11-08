@@ -1,4 +1,4 @@
-import '@prj--reactjs-component-lib/generic-lsg/lib/organisms/tabs.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/organisms/tabs.css';
 
 const Tabs = ({ children, buttons, ButtonsContainer = 'menu' }) => {
     return (

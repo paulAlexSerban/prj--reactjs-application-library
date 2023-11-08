@@ -3,8 +3,8 @@ import { useState } from 'react';
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/products/expenseTracker.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/global.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/products/expenseTracker.css';
 
 const DUMMY_EXPENSES = [
     {

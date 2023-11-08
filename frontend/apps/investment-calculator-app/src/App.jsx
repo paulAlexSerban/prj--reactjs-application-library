@@ -3,8 +3,8 @@ import Header from './components/Header/Header';
 import ResultsTable from './components/ResultsTable/ResultsTable';
 import UserInput from './components/UserInput/UserInput';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/products/investmentCalculator.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/global.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/products/investmentCalculator.css';
 
 const App = () => {
     const [userInput, setUserInput] = useState(null);

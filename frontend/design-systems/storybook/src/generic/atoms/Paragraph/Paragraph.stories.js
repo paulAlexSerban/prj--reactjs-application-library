@@ -1,6 +1,6 @@
-import { Paragraph } from '@prj--reactjs-component-lib/generic-lib/lib/index';
+import { Paragraph } from '@prj--reactjs-application-library/generic-lib/lib/index';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/paragraph.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/paragraph.css';
 
 const meta = {
     title: 'Generic/Atoms/Paragraph',

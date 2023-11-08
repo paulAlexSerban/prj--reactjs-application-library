@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Die from '../Die/Die';
 import './rollDice.scss';
-import { Button } from '@prj--reactjs-component-lib/generic-lib';
-import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
+import { Button } from '@prj--reactjs-application-library/generic-lib';
+import '@prj--reactjs-application-library/generic-lsg/lib/global.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/button.css';
 
 const RollDice = ({ sides }) => {
     const [die1, setDie1] = useState('one');

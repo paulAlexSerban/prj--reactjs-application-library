@@ -1,6 +1,6 @@
-import { Button } from '@prj--reactjs-component-lib/generic-lib/lib/index';
+import { Button } from '@prj--reactjs-application-library/generic-lib/lib/index';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/atoms/button.css';
 
 const meta = {
     title: 'Generic/Atoms/Button',

@@ -1,6 +1,6 @@
 import React from 'react';
 import './pokecard.scss';
-import padToThree from '@prj--reactjs-component-lib/shared-utils-js/src/numbers/padToThree';
+import padToThree from '@prj--reactjs-application-library/shared-utils-js/src/numbers/padToThree';
 
 // 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png'
 // const POKE_API = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';

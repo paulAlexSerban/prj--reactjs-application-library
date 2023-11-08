@@ -1,4 +1,4 @@
-import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
+import choice from '@prj--reactjs-application-library/shared-utils-js/src/arrays/choice';
 import { useState, useEffect } from 'react';
 import './box.scss';
 const Box = ({ colors, ...props }) => {

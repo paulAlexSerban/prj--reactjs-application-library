@@ -1,14 +1,14 @@
 import CORE_CONCEPTS from './data/core-concepts';
 import CONCEPT_EXAMPLES from './data/concept-examples';
-import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
-import '@prj--reactjs-component-lib/generic-lsg/lib/products/reactEssentials.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/global.css';
+import '@prj--reactjs-application-library/generic-lsg/lib/products/reactEssentials.css';
 
 import Header from './components/organisms/Header';
 import TeaserList from './components/organisms/TeaserList';
 import Examples from './components/organisms/Examples';
 
 // Dynamic content example
-import choice from '@prj--reactjs-component-lib/shared-utils-js/src/arrays/choice';
+import choice from '@prj--reactjs-application-library/shared-utils-js/src/arrays/choice';
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 const dynamicDescription = choice(reactDescriptions);
 

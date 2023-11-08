@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 const source = path.join(__dirname, '../..', 'package', 'apps');
 const dest = path.join(__dirname, '../..', 'package', 'apps');
 const BASE_URL = '/prj--reactjs-application-library/';

@@ -1,0 +1,15 @@
+.chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f8dfff;
+    display: flex;
+    justify-content: start;
+    min-height: 10rem;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    @media (min-width: 575px) {
+        justify-content: space-around;
+    }
+}

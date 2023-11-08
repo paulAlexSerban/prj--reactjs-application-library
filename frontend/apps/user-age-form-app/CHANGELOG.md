@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/user-age-form-app@0.4.0...@prj--reactjs-component-lib/user-age-form-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([861f531](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/861f531744ff1059eb69f6352f4005d77dc7317a))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/user-age-form-app@0.3.1...@prj--reactjs-component-lib/user-age-form-app@0.4.0) (2023-10-31)
 
 ### Features

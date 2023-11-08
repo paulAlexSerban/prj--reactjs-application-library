@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/hangman-app@0.7.0...@prj--reactjs-component-lib/hangman-app@0.8.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([25a8130](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/25a8130422c707fdf5e8703fd56e3221fc41a462))
+
 # [0.7.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/hangman-app@0.6.0...@prj--reactjs-component-lib/hangman-app@0.7.0) (2023-10-31)
 
 ### Features

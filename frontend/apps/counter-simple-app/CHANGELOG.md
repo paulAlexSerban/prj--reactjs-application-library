@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/counter-simple-app@0.4.0...@prj--reactjs-component-lib/counter-simple-app@0.5.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([054e587](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/054e587ee273e2c7254472f3d072ed1f299c22c4))
+-   cleanup fix ([120fdea](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/120fdeab392739c535161d5a84eea9c3fe337961))
+
 # [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/counter-simple-app@0.3.0...@prj--reactjs-component-lib/counter-simple-app@0.4.0) (2023-10-31)
 
 ### Bug Fixes

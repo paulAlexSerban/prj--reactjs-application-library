@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/dice-roll-app@0.3.0...@prj--reactjs-component-lib/dice-roll-app@0.4.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([e0b8abc](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/e0b8abce990c1f5cfd6cf7611a534da53fea446b))
+
 # [0.3.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/dice-roll-app@0.2.0...@prj--reactjs-component-lib/dice-roll-app@0.3.0) (2023-10-31)
 
 ### Features

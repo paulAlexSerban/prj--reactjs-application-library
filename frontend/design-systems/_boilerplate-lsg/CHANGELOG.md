@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/boilerplate-lsg@0.3.1...@prj--reactjs-component-lib/boilerplate-lsg@0.4.0) (2023-11-08)
+
+### Features
+
+-   cleanup ([bdc0a92](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/bdc0a92044bd5b3691ec5f56c9ea2f86e3a7802e))
+
 ## [0.3.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/boilerplate-lsg@0.3.0...@prj--reactjs-component-lib/boilerplate-lsg@0.3.1) (2023-10-31)
 
 **Note:** Version bump only for package @prj--reactjs-component-lib/boilerplate-lsg

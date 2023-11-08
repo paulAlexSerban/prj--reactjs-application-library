@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-component-lib/dice-roll-app",
     "private": true,
-    "version": "0.3.0",
+    "version": "0.4.0",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",
@@ -23,7 +23,7 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-component-lib/boilerplate-lib": "^0.3.1",
-        "@prj--reactjs-component-lib/boilerplate-lsg": "^0.3.1"
+        "@prj--reactjs-component-lib/boilerplate-lib": "^0.3.2",
+        "@prj--reactjs-component-lib/boilerplate-lsg": "^0.4.0"
     }
 }

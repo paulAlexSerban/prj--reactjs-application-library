@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import classes from './UserInput.module.css';
+import classes from './UserInput.module.scss';
 
 const initialUserInput = {
     'current-savings': 10000,
@@ -33,7 +33,7 @@ const UserInput = (props) => {
     return (
         <form onSubmit={submitHandler} className={classes.form}>
             <div className={classes['input-group']}>
-                <p>
+                <div className={classes['input-field']}>
                     <label htmlFor="current-savings">Current Savings ($)</label>
                     <input
                         onChange={(event) => inputChangeHandler('current-savings', event.target.value)}
@@ -41,8 +41,8 @@ const UserInput = (props) => {
                         type="number"
                         id="current-savings"
                     />
-                </p>
-                <p>
+                </div>
+                <div className={classes['input-field']}>
                     <label htmlFor="yearly-contribution">Yearly Savings ($)</label>
                     <input
                         onChange={(event) => inputChangeHandler('yearly-contribution', event.target.value)}
@@ -50,10 +50,10 @@ const UserInput = (props) => {
                         type="number"
                         id="yearly-contribution"
                     />
-                </p>
+                </div>
             </div>
             <div className={classes['input-group']}>
-                <p>
+                <div className={classes['input-field']}>
                     <label htmlFor="expected-return">Expected Interest (%, per year)</label>
                     <input
                         onChange={(event) => inputChangeHandler('expected-return', event.target.value)}
@@ -61,8 +61,8 @@ const UserInput = (props) => {
                         type="number"
                         id="expected-return"
                     />
-                </p>
-                <p>
+                </div>
+                <div className={classes['input-field']}>
                     <label htmlFor="duration">Investment Duration (years)</label>
                     <input
                         onChange={(event) => inputChangeHandler('duration', event.target.value)}
@@ -70,7 +70,7 @@ const UserInput = (props) => {
                         type="number"
                         id="duration"
                     />
-                </p>
+                </div>
             </div>
             <p className={classes.actions}>
                 <button onClick={resetHandler} type="reset" className={classes.buttonAlt}>

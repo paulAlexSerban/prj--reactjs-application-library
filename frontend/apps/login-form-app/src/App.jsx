@@ -19,6 +19,7 @@ function LoginFormCmp() {
                 {!ctx.isLoggedIn && <Login />}
                 {ctx.isLoggedIn && <Home />}
             </main>
+            <p>Login with any valid email and any password of 7 characters or more.</p>
         </div>
     );
 }

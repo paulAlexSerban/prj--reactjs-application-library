@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ChartBar.css';
+import './ChartBar.scss';
 
 const ChartBar = ({ value, maxValue, label }) => {
     let barFillHeight = '0%';

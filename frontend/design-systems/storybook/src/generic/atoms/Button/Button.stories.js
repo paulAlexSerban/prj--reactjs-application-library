@@ -14,6 +14,12 @@ const meta = {
     // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
     argTypes: {
         backgroundColor: { control: 'color' },
+        radius: {
+            control: {
+                type: 'select',
+            },
+            options: ['squared', 'rounded'],
+        },
     },
 };
 
@@ -23,12 +29,15 @@ export const Primary = {
     args: {
         primary: true,
         label: 'Button',
+        radius: 'rounded',
     },
 };
 
 export const Secondary = {
     args: {
+        primary: false,
         label: 'Button',
+        radius: 'rounded',
     },
 };
 
@@ -36,6 +45,7 @@ export const Large = {
     args: {
         size: 'large',
         label: 'Button',
+        radius: 'rounded',
     },
 };
 
@@ -43,5 +53,6 @@ export const Small = {
     args: {
         size: 'small',
         label: 'Button',
+        radius: 'rounded',
     },
 };

@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/generic-lib@0.3.1...@prj--reactjs-component-lib/generic-lib@0.4.0) (2023-11-08)
+
+### Bug Fixes
+
+-   styles ([26dc969](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/26dc969af330dda8d62faf01cd1de9e6ece542fd))
+-   text to paragrah ([2810879](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/281087955ac65839d57aa3cea483864a56d8430c))
+
+### Features
+
+-   cleanup ([fe007c8](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/fe007c8c6119a0a7f875b185dfd586117dc24fbe))
+-   cleanup ([bdc0a92](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/bdc0a92044bd5b3691ec5f56c9ea2f86e3a7802e))
+-   **icon:** star to icon ([66441c3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/66441c346c41da6de5139894558be64060a0206c))
+-   **paragraph:** from text to paragraph ([43952f3](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/43952f31ec26c6e1fefd16513e1053fe5b857345))
+-   small changes ([1a5d130](https://github.com/paulAlexSerban/prj--reactjs-component-lib/commit/1a5d13041cf20d26020764e5df258eec0a23dc3f))
+
 ## [0.3.1](https://github.com/paulAlexSerban/prj--reactjs-component-lib/compare/@prj--reactjs-component-lib/generic-lib@0.3.0...@prj--reactjs-component-lib/generic-lib@0.3.1) (2023-10-31)
 
 **Note:** Version bump only for package @prj--reactjs-component-lib/generic-lib

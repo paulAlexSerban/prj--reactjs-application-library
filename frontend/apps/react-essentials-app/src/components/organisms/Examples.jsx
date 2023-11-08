@@ -6,8 +6,6 @@ import Tabs from '../molecules/Tabs';
 import Section from '../molecules/Section';
 import TabButton from '../atoms/TabButton';
 
-import '@prj--reactjs-component-lib/generic-lsg/lib/organisms/tabbedComponent.css';
-
 import { useState } from 'react';
 
 const Examples = ({ title, data }) => {

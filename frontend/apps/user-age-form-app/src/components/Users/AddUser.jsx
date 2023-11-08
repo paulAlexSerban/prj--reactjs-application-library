@@ -43,7 +43,7 @@ const AddUser = ({ onAddUser }) => {
         <Wrapper>
             {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler} />}
             <Card className={classes.input}>
-                <form onSubmit={addUserHandler}>
+                <form className={classes.form} onSubmit={addUserHandler}>
                     <label htmlFor="username">Username</label>
                     <input id="username" type="text" ref={nameInputRef} />
                     <label htmlFor="age">Age (Years)</label>

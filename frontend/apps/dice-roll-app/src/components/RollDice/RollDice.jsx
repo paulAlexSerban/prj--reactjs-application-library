@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Die from '../Die/Die';
 import './rollDice.scss';
+import { Button } from '@prj--reactjs-component-lib/generic-lib';
+import '@prj--reactjs-component-lib/generic-lsg/lib/global.css';
+import '@prj--reactjs-component-lib/generic-lsg/lib/atoms/button.css';
 
 const RollDice = ({ sides }) => {
     const [die1, setDie1] = useState('one');
@@ -29,9 +32,13 @@ const RollDice = ({ sides }) => {
                 <Die face={die1} rolling={rolling} />
                 <Die face={die2} rolling={rolling} />
             </div>
-            <button onClick={roll} disabled={rolling}>
-                {rolling ? 'Rolling...' : 'Roll Dice!'}
-            </button>
+            <Button
+                label={rolling ? 'Rolling...' : 'Roll Dice!'}
+                onClick={roll}
+                disabled={rolling}
+                size="large"
+                radius="rounded"
+            />
         </div>
     );
 };

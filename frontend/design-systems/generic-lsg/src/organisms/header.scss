@@ -1,32 +1,31 @@
 .header {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    text-align: center;
+    margin-top: 3rem;
+    padding-inline: 2rem;
 
-.header svg {
-    display: inline-block;
-    vertical-align: top;
-}
+    * + * {
+        display: block;
+        margin-top: 1rem;
+    }
 
-.header h1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    margin: 6px 0 6px 10px;
-    display: inline-block;
-    vertical-align: top;
-}
+    &__img {
+        height: 5rem;
+        width: 10rem;
+        object-fit: cover;
+    }
 
-.header button + button {
-    margin-left: 10px;
-}
+    &__heading {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 5rem;
+        background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+    }
 
-.header .welcome {
-    color: #333;
-    font-size: 14px;
-    margin-right: 10px;
+    &__text {
+        color: #8964b0;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
 }

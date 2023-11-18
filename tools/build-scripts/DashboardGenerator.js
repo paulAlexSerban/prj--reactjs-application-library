@@ -39,7 +39,7 @@ const init = () => {
                 <h1 class="col display-1">React App Library</h1>
               </header>
 
-              <main class="row">
+              <main>
                 <h2>App. List</h2>
                 <ul class="nav flex-column">
 `;

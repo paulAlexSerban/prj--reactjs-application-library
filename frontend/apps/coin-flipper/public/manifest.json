@@ -1,0 +1,5 @@
+{
+    "short_name": "coin-flipper-app",
+    "start_url": "/coin-flipper-app",
+    "readme": "# Coin Flipper App\n\n> from udemy - The Modern React Bootcamp (Hooks, Context, NextJS, Router) by Colt Steele\n\n## Coin flipping counter\n\nThe user should be able to click on a button to flip a coin. Every time the user clicks, the coin gets flipped again. The app should also keep track of how many times heads and tails have shown up.\n\nBefore building anything, think about the structure of your React app. Don’t build this application with a single component: think about how to break your app up into at least two separate components!\n\n## Resources\n\n-   Heads:”https://tinyurl.com/react-coin-heads-jpg”\n-   Tails: “https://tinyurl.com/react-coin-tails-jpg”\n"
+}

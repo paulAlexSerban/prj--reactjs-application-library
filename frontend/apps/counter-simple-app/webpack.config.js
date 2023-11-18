@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 const PROJECT_NAME = require('./package.json').name.split('/').pop();
+const BASE_URL = process.env.BASE_URL || '/';
 
 module.exports = {
     entry: './src/index.js',

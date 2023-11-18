@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/paulAlexSerban/prj--reactjs-application-library/compare/@prj--reactjs-application-library/hangman-app@0.9.0...@prj--reactjs-application-library/hangman-app@0.9.1) (2023-11-18)
+
+**Note:** Version bump only for package @prj--reactjs-application-library/hangman-app
+
 # 0.9.0 (2023-11-08)
 
 ### Bug Fixes

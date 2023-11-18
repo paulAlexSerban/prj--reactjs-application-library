@@ -1,7 +1,7 @@
 {
     "name": "@prj--reactjs-application-library/hangman-app",
     "private": true,
-    "version": "0.9.0",
+    "version": "0.9.1",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",
@@ -23,6 +23,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-application-library/media-assets": "^0.6.0"
+        "@prj--reactjs-application-library/media-assets": "^0.6.1"
     }
 }

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/paulAlexSerban/prj--reactjs-application-library/compare/@prj--reactjs-application-library/generic-lsg@0.5.0...@prj--reactjs-application-library/generic-lsg@0.5.1) (2023-11-18)
+
+**Note:** Version bump only for package @prj--reactjs-application-library/generic-lsg
+
 # 0.5.0 (2023-11-08)
 
 ### Bug Fixes

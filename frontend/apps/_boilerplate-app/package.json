@@ -3,7 +3,7 @@
     "formatted_name": "Boilerplate App",
     "description": "Boilerplate App for ReactJS Application Library",
     "private": true,
-    "version": "0.6.0",
+    "version": "0.6.1",
     "scripts": {
         "start": "vite",
         "build:dev": "export NODE_ENV=development && vite build",
@@ -25,7 +25,7 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@prj--reactjs-application-library/boilerplate-lib": "^0.4.0",
-        "@prj--reactjs-application-library/boilerplate-lsg": "^0.5.0"
+        "@prj--reactjs-application-library/boilerplate-lib": "^0.4.1",
+        "@prj--reactjs-application-library/boilerplate-lsg": "^0.5.1"
     }
 }

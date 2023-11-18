@@ -190,46 +190,56 @@ jobs:
                   name: apps-${{ github.run_number }}-${{ github.run_id }}
                   path: './package/apps/'
 
-    # deploy-preview-gh-pages:
-    #     name: 'Deploy Preview to GitHub Pages PREVIEW env.'
-    #     runs-on: ubuntu-latest
-    #     needs: [vrt-chromatic, build-n-package]
-    #     steps:
-    #         - name: '📥 checkout repository'
-    #           uses: actions/checkout@v3
-    #           with:
-    #               fetch-depth: 0
-    #         - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
-    #           uses: tj-actions/changed-files@v35
-    #           id: changed-test-files
-    #           with:
-    #               files: |
-    #                   shared/**/*
-    #                   frontend/**/*
-    #                   assets/**/*
-    #                   backend/**/*
-    #                   database/**/*
+    deploy-dev:
+        name: 'Deploy to Netlify DEV env.'
+        runs-on: ubuntu-latest
+        needs: [vrt-chromatic, build-n-package]
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+                      assets/**/*
+                      backend/**/*
+                      database/**/*
 
-    #         - name: 'Create package/dist'
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           run: mkdir -p package/apps
+            - name: 'Create package/dist'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              run: mkdir -p package/apps
 
-    #         - uses: actions/download-artifact@v3
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           with:
-    #               name: apps-${{ github.run_number }}-${{ github.run_id }}
-    #               path: package/apps
+            - uses: actions/download-artifact@v3
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              with:
+                  name: apps-${{ github.run_number }}-${{ github.run_id }}
+                  path: package/apps
 
-    #         - name: '🔧 Setup Pages'
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           uses: actions/configure-pages@v3
+            - name: '🔧 Setup Pages'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: actions/configure-pages@v3
 
-    #         - name: Upload artifact
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           uses: actions/upload-pages-artifact@v2
-    #           with:
-    #               # Upload entire repository
-    #               path: './package/apps'
+            - name: Upload artifact
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: actions/upload-pages-artifact@v2
+              with:
+                  # Upload entire repository
+                  path: './package/apps'
+
+            - name: '🚀 Deploy to Netlify DEV env.'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: nwtgck/actions-netlify@v2.0
+              with:
+                  publish-dir: './package/apps'
+              env:
+                  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                  NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
+              timeout-minutes: 1
 
     #         - name: '🚀 Deploy to GitHub Pages'
     #           if: steps.changed-test-files.outputs.any_changed == 'true'

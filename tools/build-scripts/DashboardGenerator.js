@@ -2,7 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const source = path.join(__dirname, '../..', 'package', 'apps');
 const dest = path.join(__dirname, '../..', 'package', 'apps');
-const BASE_URL = '/prj--reactjs-application-library/';
+const dotenv = require('dotenv');
+dotenv.config();
+const BASE_URL = process.env.BASE_URL;
 
 const init = () => {
     // Read the contents of the directory

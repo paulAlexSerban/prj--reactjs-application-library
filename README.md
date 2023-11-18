@@ -2,9 +2,16 @@
 
 ## Env URL's
 
--   [DEV Apps (Gh. Pages)](https://paulalexserban.github.io/prj--reactjs-application-library/)
--   [DEV Storybook (Netlify)](https://dev-react-app-lib.netlify.app)
+-   [PROD Apps (AWS)](paulserban.eu/portfolio-apps/prj--reactjs-application-library)]
 -   [Visual Regression Testing (Chromatic Storybook)](https://www.chromatic.com/builds?appId=65377a1a1bdfa753f1c280b8)
+
+-   [STAGE Apps (AWS)](stage.paulserban.eu/portfolio-apps/prj--reactjs-application-library)
+
+-   [TEST Apps (Gh. Pages)](https://paulalexserban.github.io/prj--reactjs-application-library/)
+-   [TEST Storybook (Netlify)](https://test-cmp-lib-react-app-lib.netlify.app/)
+
+-   [DEV Apps (Netlify)](https://dev-app-list-react-app-lib.netlify.app/)
+-   [DEV Storybook (Netlify)](https://dev-cmp-lib-react-app-lib.netlify.app/)
 
 ## 1. Introduction
 
@@ -32,6 +39,8 @@
 
 -   **GitHub Actions**: Set up to automate testing, building, and deployment workflows.
 -   **Chromatic Deployment**: Automatic deployment to Chromatic for visual regression testing and Storybook hosting.
+
+![CI-CD](./wiki/ci-cd.png)
 
 ## 6. Testing and Quality Assurance
 

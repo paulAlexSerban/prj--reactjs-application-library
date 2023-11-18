@@ -1,5 +1,7 @@
 {
     "name": "@prj--reactjs-application-library/boilerplate-app",
+    "formatted_name": "Boilerplate App",
+    "description": "Boilerplate App for ReactJS Application Library",
     "private": true,
     "version": "0.6.0",
     "scripts": {

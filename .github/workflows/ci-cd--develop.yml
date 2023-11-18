@@ -241,47 +241,48 @@ jobs:
                   NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
               timeout-minutes: 1
 
+    deploy-storybook-dev:
+        name: 'Deploy Storybook to Netlify DEV env.'
+        runs-on: ubuntu-latest
+        needs: [vrt-chromatic]
+        steps:
+            - name: '📥 checkout repository'
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
+              uses: tj-actions/changed-files@v35
+              id: changed-test-files
+              with:
+                  files: |
+                      shared/**/*
+                      frontend/**/*
+                      assets/**/*
+                      backend/**/*
+                      database/**/*
+
+            - name: 'Create package/storybook'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              run: mkdir -p package/storybook
+
+            - uses: actions/download-artifact@v3
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              with:
+                  name: storybook-${{ github.run_number }}-${{ github.run_id }}
+                  path: package/storybook
+
+            - name: '🚀 Deploy to Netlify'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: nwtgck/actions-netlify@v2.0
+              with:
+                  publish-dir: './package/storybook'
+              env:
+                  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                  NETLIFY_SITE_ID: ${{ secrets.DEV_STORYBOOK_NETLIFY_SITE_ID }}
+              timeout-minutes: 1
+
+    # snippet to deploy to GitHub Pages
     #         - name: '🚀 Deploy to GitHub Pages'
     #           if: steps.changed-test-files.outputs.any_changed == 'true'
     #           id: deployment
     #           uses: actions/deploy-pages@v2
-
-    # deploy-storybook-preview-netlify:
-    #     name: 'Deploy Storybook to Netlify PREVIEW env.'
-    #     runs-on: ubuntu-latest
-    #     needs: [vrt-chromatic]
-    #     steps:
-    #         - name: '📥 checkout repository'
-    #           uses: actions/checkout@v3
-    #           with:
-    #               fetch-depth: 0
-    #         - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
-    #           uses: tj-actions/changed-files@v35
-    #           id: changed-test-files
-    #           with:
-    #               files: |
-    #                   shared/**/*
-    #                   frontend/**/*
-    #                   assets/**/*
-    #                   backend/**/*
-    #                   database/**/*
-
-    #         - name: 'Create package/storybook'
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           run: mkdir -p package/storybook
-
-    #         - uses: actions/download-artifact@v3
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           with:
-    #               name: storybook-${{ github.run_number }}-${{ github.run_id }}
-    #               path: package/storybook
-
-    #         - name: '🚀 Deploy to Netlify'
-    #           if: steps.changed-test-files.outputs.any_changed == 'true'
-    #           uses: nwtgck/actions-netlify@v2.0
-    #           with:
-    #               publish-dir: './package/storybook'
-    #           env:
-    #               NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-    #               NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-    #           timeout-minutes: 1

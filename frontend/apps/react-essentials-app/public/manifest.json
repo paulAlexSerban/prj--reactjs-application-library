@@ -1,0 +1,5 @@
+{
+    "short_name": "react-essentials-app",
+    "start_url": "/react-essentials-app",
+    "readme": "# React Essentials App.\n\n> from udemy - React - The Modern Guide 2023 (incl. React Router & Redux) by Maximilian Schwarzmüller\n\n## The Build Process (Theory)\n\n1. React Code\n    - the React code developers write\n2. Build Process\n    - changes & optimizes the code\n    - transforms it such that it runs in the browser\n    - also (potentially) optimizes other assets like CSS & image files\n3. Deployable Files\n    - a collection of generated files that include your optimized code and any other extra assets (eg. CSS code files, optimized images, etc.)\n"
+}

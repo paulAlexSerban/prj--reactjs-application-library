@@ -6,6 +6,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 const BASE_URL = process.env.BASE_URL;
 
+const date = new Date();
+
 const init = () => {
     // Read the contents of the directory
     fs.readdir(source, (err, files) => {
@@ -56,13 +58,13 @@ const init = () => {
             </main>
             <footer class="py-3 my-4">
               <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">LinkedIn</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Github</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Site</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blog</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/paulalexs/" class="nav-link px-2 text-body-secondary">LinkedIn</a></li>
+                <li class="nav-item"><a href="https://github.com/paulAlexSerban" class="nav-link px-2 text-body-secondary">Github</a></li>
+                <li class="nav-item"><a href="https://paulserban.eu/" class="nav-link px-2 text-body-secondary">Site</a></li>
+                <li class="nav-item"><a href="https://paulserban.eu/portfolio/" class="nav-link px-2 text-body-secondary">Portfolio</a></li>
+                <li class="nav-item"><a href="https://paulserban.eu/blog/" class="nav-link px-2 text-body-secondary">Blog</a></li>
               </ul>
-              <p class="text-center text-body-secondary">© 2023 paulserban.eu | Generated on ${new Date().toLocaleString()}</p>
+              <p class="text-center text-body-secondary">© ${date.getFullYear()} paulserban.eu | Generated on ${date.toLocaleString()}</p>
             </footer>
             </body>
           </html>`;

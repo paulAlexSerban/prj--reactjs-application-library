@@ -14,7 +14,7 @@ module.exports = {
         [
             '@semantic-release/exec',
             {
-                prepare: 'yarn formats:write && git add .',
+                generateNotes: 'yarn formats:write && git add .',
             },
         ],
         [

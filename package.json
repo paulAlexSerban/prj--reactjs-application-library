@@ -19,7 +19,7 @@
         "lint": "yarn formats:write && lerna run lint",
         "dev:generic-lib": "lerna run start --scope=@prj--reactjs-application-library/generic-lib --stream",
         "process:assets": "lerna run process --scope=@prj--reactjs-application-library/media-assets --stream",
-        "version": "bash tools/build-scripts/version.bash",
+        "version:modules": "bash tools/build-scripts/version.bash",
         "commit": "yarn git-cz"
     },
     "dependencies": {

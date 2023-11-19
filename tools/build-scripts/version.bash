@@ -10,7 +10,7 @@ yarn --cwd ../../ formats:write
 git add .
 
 # Commit the changes
-git commit -m "chore(release): publish"
+git commit -m "chore(release): version modules"
 
 # Lastly, you might push tags manually if desired
 git push --tags

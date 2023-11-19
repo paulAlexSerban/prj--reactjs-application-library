@@ -12,6 +12,12 @@ module.exports = {
         ],
         ['@semantic-release/changelog', { changelogFile: 'wiki/CHANGELOG.md' }],
         [
+            '@semantic-release/exec',
+            {
+                prepare: 'yarn formats:write && git add .',
+            },
+        ],
+        [
             '@semantic-release/git',
             {
                 assets: ['wiki/CHANGELOG.md', 'package.json'],

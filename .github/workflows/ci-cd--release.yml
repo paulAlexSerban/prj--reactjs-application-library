@@ -31,6 +31,6 @@ jobs:
               run: yarn install
 
             - name: '🚀 Create Release'
-              run: CI=true yarn semantic-release
+              run: CI=true && yarn semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

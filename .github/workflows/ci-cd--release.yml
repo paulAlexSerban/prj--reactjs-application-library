@@ -20,6 +20,19 @@ jobs:
               uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - name: 'Release'
-              if: steps.changed-test.files.outputs.test_any_changed == 'true'
-              run: echo 'Prepare and run E2E tests'
+
+            - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'yarn'
+
+            - name: '🔧 Install dependencies'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              run: yarn install
+
+            - name: '🚀 Create Release'
+              run: yarn semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

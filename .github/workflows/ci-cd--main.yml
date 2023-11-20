@@ -27,37 +27,24 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: '🔍  Verify Changed Files [shared, frontend]'
-              uses: tj-actions/changed-files@v35
-              id: changed-test-files
-              with:
-                  files: |
-                      shared/**/*
-                      frontend/**/*
-
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn install
 
             - name: '🌈 Run VRT w. Chromatic'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               env:
                   CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
               run: yarn test:chromatic
 
             - name: 'Package ./storybook'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn run package
 
             - name: 'Upload apps artifact'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-artifact@v3
               with:
                   name: storybook-${{ github.run_number }}-${{ github.run_id }}
@@ -72,38 +59,23 @@ jobs:
               uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
-              uses: tj-actions/changed-files@v35
-              id: changed-test-files
-              with:
-                  files: |
-                      shared/**/*
-                      frontend/**/*
-                      assets/**/*
-                      backend/**/*
-                      database/**/*
 
             - name: '🔧  Setup NodeJS ${{ env.NODE_VERSION }}'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.NODE_VERSION }}
                   cache: 'yarn'
 
             - name: '🔧 Install dependencies'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn install
 
             - name: 'Run Build'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn run build:prod
 
             - name: 'Package ./apps'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: yarn run package
 
             - name: 'Upload apps artifact'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-artifact@v3
               with:
                   name: apps-${{ github.run_number }}-${{ github.run_id }}
@@ -118,23 +90,11 @@ jobs:
               uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
-              uses: tj-actions/changed-files@v35
-              id: changed-test-files
-              with:
-                  files: |
-                      shared/**/*
-                      frontend/**/*
-                      assets/**/*
-                      backend/**/*
-                      database/**/*
 
             - name: 'Create package/dist'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: mkdir -p package/apps
 
             - uses: actions/download-artifact@v3
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               with:
                   name: apps-${{ github.run_number }}-${{ github.run_id }}
                   path: package/apps
@@ -144,14 +104,12 @@ jobs:
             #   uses: actions/configure-pages@v3
 
             - name: Upload artifact
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-pages-artifact@v2
               with:
                   # Upload entire repository
                   path: './package/apps'
 
             - name: '🚀 Deploy to Netlify TEST env.'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: nwtgck/actions-netlify@v2.0
               with:
                   publish-dir: './package/apps'
@@ -175,29 +133,16 @@ jobs:
               uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - name: '🔍  Verify Changed Files [shared, backend, database, frontend, assets]'
-              uses: tj-actions/changed-files@v35
-              id: changed-test-files
-              with:
-                  files: |
-                      shared/**/*
-                      frontend/**/*
-                      assets/**/*
-                      backend/**/*
-                      database/**/*
 
             - name: 'Create package/storybook'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               run: mkdir -p package/storybook
 
             - uses: actions/download-artifact@v3
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               with:
                   name: storybook-${{ github.run_number }}-${{ github.run_id }}
                   path: package/storybook
 
             - name: '🚀 Deploy to Netlify'
-              if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: nwtgck/actions-netlify@v2.0
               with:
                   publish-dir: './package/storybook'

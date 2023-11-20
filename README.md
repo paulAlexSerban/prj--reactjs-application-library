@@ -39,6 +39,7 @@
 
 -   **GitHub Actions**: Set up to automate testing, building, and deployment workflows.
 -   **Chromatic Deployment**: Automatic deployment to Chromatic for visual regression testing and Storybook hosting.
+-   **Netlify Hosting**: Automatic deployment to Netlify using Github Actions.
 
 ![CI-CD](./wiki/ci-cd.png)
 
@@ -81,18 +82,12 @@
 -   [x] implement commitlint and commitizen
 -   [x] implement semantic-release
 -   [x] DEV - deploy storybook to Netlify
--   [x] DEV - deploy apps to Gh. Pages
--   [ ] TEST - deploy apps to AWS Amplify
-    -   [ ] setup AWS Amplify
-        -   [ ] use HTTP authentication function
-    -   [ ] setup AWS Route 53
--   [ ] TEST - deploy storybook to Surge.sh
--   [ ] STAGE - deploy apps to AWS S3
-    -   [ ] setup AWS S3 bucket
-    -   [ ] setup AWS CloudFront
-        -   [ ] use HTTP authentication function
-    -   [ ] setup AWS Route 53
--   [ ] PROD - deploy apps to AWS S3
+-   [x] DEV - deploy apps to Netlify
+-   [x] TEST - deploy storybook to Netlify
+-   [x] TEST - deploy apps to Netlify
+-   [x] STAGE - deploy storybook to Netlify
+-   [x] STAGE - deploy apps to Netlify
+-   [x] PROD - deploy storybook to Netlify
 -   [x] process and publish assets to AWS S3
 -   [x] build and package apps in `./package/apps`
 -   [ ] integration tests
@@ -101,6 +96,6 @@
     -   [ ] lint, formats and test
         -   [ ] -   run locally on committing for development branches
         -   [ ] -   run in CI for master branch and on pull requests to release branches
--   [ ] implement sematic release on release branch
-    -   [ ] use `semantic-release` to bump version of all packages using Lerna
-    -   [ ] use `semantic-release` to bump version of main project
+-   [x] implement sematic release on release branch
+    -   [x] use `semantic-release` to bump version of all packages using Lerna
+    -   [x] use `semantic-release` to bump version of main project

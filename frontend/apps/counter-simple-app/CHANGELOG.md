@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/paulAlexSerban/prj--reactjs-application-library/compare/@prj--reactjs-application-library/counter-simple-app@0.6.0...@prj--reactjs-application-library/counter-simple-app@0.7.0) (2023-11-18)
+
+### Features
+
+-   trigger ([6af9b6a](https://github.com/paulAlexSerban/prj--reactjs-application-library/commit/6af9b6a2f45b437e937787d2f96754d932c008bb))
+
 # 0.6.0 (2023-11-08)
 
 ### Bug Fixes

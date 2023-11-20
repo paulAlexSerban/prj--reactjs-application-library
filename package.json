@@ -1,6 +1,6 @@
 {
     "name": "@prj--reactjs-application-library/core",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "",
     "author": "Paul Serban",
     "license": "MIT",
@@ -19,17 +19,26 @@
         "lint": "yarn formats:write && lerna run lint",
         "dev:generic-lib": "lerna run start --scope=@prj--reactjs-application-library/generic-lib --stream",
         "process:assets": "lerna run process --scope=@prj--reactjs-application-library/media-assets --stream",
-        "version": "bash tools/build-scripts/version.bash",
+        "version:modules": "bash tools/build-scripts/version.bash",
         "commit": "yarn git-cz"
     },
     "dependencies": {
         "@commitlint/cli": "^17.7.2",
         "@commitlint/config-conventional": "^17.7.0",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^11.1.0",
+        "@semantic-release/exec": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^9.2.3",
+        "@semantic-release/npm": "^11.0.1",
+        "@semantic-release/release-notes-generator": "^12.1.0",
         "commitizen": "^4.3.0",
         "cz-conventional-changelog": "^3.3.0",
+        "dotenv": "^16.3.1",
         "husky": "^8.0.3",
         "lerna": "^7.3.0",
-        "prettier": "^3.0.3"
+        "prettier": "^3.0.3",
+        "semantic-release": "^22.0.8"
     },
     "workspaces": {
         "packages": [

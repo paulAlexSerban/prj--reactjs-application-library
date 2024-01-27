@@ -219,6 +219,10 @@ jobs:
                   name: apps-${{ github.run_number }}-${{ github.run_id }}
                   path: package/apps
 
+            - name: '🔧 Setup Pages'
+              if: steps.changed-test-files.outputs.any_changed == 'true'
+              uses: actions/configure-pages@v3
+
             - name: Upload artifact
               if: steps.changed-test-files.outputs.any_changed == 'true'
               uses: actions/upload-pages-artifact@v2
